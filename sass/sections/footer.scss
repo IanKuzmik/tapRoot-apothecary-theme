@@ -1,0 +1,136 @@
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - FOOTER
+  =================
+*/
+
+@import '../base/mixins';
+@import '../base/placeholders';
+@import '../base/variables';
+
+.tr-apoth-footer{
+  font-family: $standard-text;
+  border-top: 2px #000 solid;
+  box-shadow: inset 0 15px 15px -15px #000; /*creates a top-only box-shadow */
+  padding-top: 10px;
+  letter-spacing: .05em;
+}
+.tr-apoth-footer-cat-title {
+  border-left: 5px $xochis-orange solid;
+  font-weight: 600;
+  margin-left: 10px;
+  padding-left: 5px;
+  font-size: $text-m;
+}
+
+/*
+  Map
+  ------------------------------------------
+*/
+
+.tr-apoth-navbar-footer-container {
+  ul { list-style: none; }
+  a { text-decoration: none; }
+}
+.tr-apoth-navbar-footer-container .current-menu-item .tr-apoth-nav-footer-item { color: $xochis-black; }
+
+.tr-apoth-nav-footer-item {
+  display: block;
+  font-weight: 600;
+  line-height: 2.5em;
+  color: $xochis-orange;
+  @include animate( all, 0.4s );
+  &:hover, &:focus { color: $xochis-black; text-decoration: none; }
+}
+
+/*
+  Etsy
+  ------------------------------------------
+*/
+.tr-apoth-footer-etsy-item { display: block; line-height: 2.5em; }
+.tr-apoth-footer-etsy-icon {
+  color: $xochis-orange;
+  font-size: 1.5em;
+  &:before { display: inline; padding: 5px; border: 2px $xochis-orange solid; }
+}
+.tr-apoth-footer-etsy-link {
+  font-family: $standard-text;
+  color: $xochis-black;
+  @include animate( all, 0.4s );
+  &:hover, &:focus { color: $xochis-orange; }
+}
+.tr-apoth-footer-etsy-hr { background-color: $xochis-orange; height: 2px; width: 50px; }
+.tr-apoth-footer-etsy-shop-link {
+  @extend %tr-apoth-btn-link;
+  padding: 5px 35px;
+  background-color: $xochis-black;
+  color: $xochis-white;
+  &:hover, &:focus { color: $xochis-orange; }
+}
+
+/*
+  Contact
+  ------------------------------------------
+*/
+.tr-apoth-footer-logo { width: 100px; }
+.tr-apoth-footer-contact-hr { background-color: $xochis-black; height: 2px; width: 100px; }
+.tr-apoth-footer-contact-address{ color: $xochis-orange; }
+.tr-apoth-footer-email-link {
+  font-family: $standard-text;
+  color: $xochis-black;
+  @include animate( all, 0.4s );
+  &:hover, &:focus { color: $xochis-orange; }
+}
+
+/*
+  Social
+  ------------------------------------------
+*/
+.tr-apoth-footer-social-container { height: 100%; }
+.tr-apoth-footer-social-links { position: relative; top: 30%; }
+.tr-apoth-footer-social-link {
+  font-size: 1.5em;
+  color: $xochis-orange;
+  padding: 11px 10px;
+  margin: 0 5px;
+  border: 3px $xochis-orange solid;
+  border-radius: 50%;
+  @include animate( all , 0.4s );
+  &:before { @include animate( all, 0s ); }
+  &:hover, &:focus {
+    text-decoration: none;
+    background-color: $xochis-black;
+    color: $xochis-white;
+    border: 3px $xochis-white solid;
+  }
+}
+
+/*
+  Bottom Bar
+  ------------------------------------------
+*/
+.tr-apoth-bottom-bar {
+  background-color: $xochis-black;
+  color: $xochis-orange;
+  font-size: $text-xs;
+  padding: 10px 20px;
+  margin-top: 10px;
+  p, ul { margin: 0; }
+}
+.tr-apoth-bottom-bar-nav {
+  ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    li:first-child { border-left: 1px $xochis-orange solid; }
+  }
+  a { text-decoration: none; }
+  span {
+    color: $xochis-white;
+    border-right: 1px $xochis-orange solid;
+    padding: 0 5px;
+    @include animate( all, 0.4s );
+    &:hover, &:focus { color: $xochis-orange; }
+  }
+}

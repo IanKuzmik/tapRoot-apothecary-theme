@@ -1,0 +1,47 @@
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+
+@mixin animate ( $attr, $time ) {
+  -webkit-transition: $attr $time ease;
+  -moz-transition: $attr $time ease;
+  -ms-transition: $attr $time ease;
+  -o-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+
+@mixin transform ( $val ) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  -o-transform: $val;
+  transform: $val;
+}
+
+@mixin transformX2 ( $val, $val2 ) {
+  -webkit-transform: $val $val2;
+  -moz-transform: $val $val2;
+  -ms-transform: $val $val2;
+  -o-transform: $val $val2;
+  transform: $val $val2;
+}
+
+@mixin filter ( $val ) {
+  -webkit-filter: $val;
+  filter: $val;
+}
+
+@mixin gradient ( $dir, $color1, $stop1, $color2, $stop2 ) {
+  background: -moz-linear-gradient( $dir, $color1 $stop1, $color2 $stop2 );
+  background: -webkit-linear-gradient( $dir, $color1 $stop1, $color2 $stop2 );
+  background: linear-gradient( $dir, $color1 $stop1, $color2 $stop2 );
+}
+
+@mixin double-gradient ( $dir, $color1, $stop1, $color2, $stop2, $color3, $stop3 ) {
+  background: -moz-linear-gradient( $dir, $color1 $stop1, $color2 $stop2, $color3 $stop3 );
+  background: -webkit-linear-gradient( $dir, $color1 $stop1, $color2 $stop2, $color3 $stop3 );
+  background: linear-gradient( $dir, $color1 $stop1, $color2 $stop2, $color3 $stop3 );
+}

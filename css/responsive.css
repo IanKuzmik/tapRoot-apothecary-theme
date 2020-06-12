@@ -1,0 +1,304 @@
+/*
+  @package tapRoot_apothecary
+  ========
+    SASS
+  ========
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+@media only screen and (max-width: 992px) {
+  .tr-apoth-navbar .tr-apoth-navbar-container {
+    display: none;
+  }
+
+  .tr-apoth-navbar .tr-apoth-nav-toggle-icon {
+    display: block;
+    text-align: center;
+  }
+
+  .tr-apoth-home-hero-title.tr-text-xochis {
+    font-size: 6em;
+  }
+
+  .tr-apoth-home-hero-title.tr-text-apothecary {
+    font-size: 2em;
+  }
+
+  .tr-apoth-home-product-img-container {
+    padding: 0;
+  }
+  .tr-apoth-home-product-img-container br {
+    display: none;
+  }
+  .tr-apoth-home-product-img-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tr-apoth-home-product-info-box {
+    margin: 20px 10%;
+  }
+
+  .tr-apoth-instagram-item {
+    height: 200px;
+  }
+
+  .tr-apoth-products-featured {
+    display: none;
+  }
+
+  .tr-apoth-individual-product {
+    width: 45%;
+  }
+
+  .tr-apoth-product-img-container {
+    padding: 0;
+  }
+  .tr-apoth-product-img-container br {
+    display: none;
+  }
+  .tr-apoth-product-img-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tr-apoth-product-info-box {
+    margin: 20px 10%;
+  }
+
+  .tr-apoth-about-ipa-logo {
+    display: none;
+  }
+
+  .tr-apoth-floating-flower {
+    display: none;
+  }
+
+  .tr-apoth-about-hero-info-box p {
+    margin: 20px 40px;
+    font-weight: 400;
+  }
+
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box {
+    text-align: center;
+  }
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box p {
+    margin: 20px 0;
+  }
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box hr {
+    margin: auto;
+    background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .tr-apoth-footer-social-link {
+    padding: 4px 3px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body div#primary {
+    margin-top: 130px;
+  }
+
+  .tr-apoth-header {
+    height: 130px;
+  }
+
+  .tr-apoth-header.sticky {
+    height: 90px;
+  }
+
+  .tr-apoth-nav-toggle-icon {
+    text-align: left;
+  }
+
+  .tr-apoth-home-hero-left {
+    height: 40%;
+  }
+
+  .tr-apoth-home-hero-right.tr-apoth-home-hero-right {
+    height: 60%;
+    padding-bottom: 20px;
+  }
+
+  .tr-apoth-home-hero-carousel ol.tr-apoth-carousel-dots {
+    bottom: 0;
+  }
+
+  .tr-apoth-home-products p {
+    font-size: 0.9em;
+  }
+
+  .tr-apoth-home-product-info-box {
+    margin: 20px 0;
+  }
+
+  .tr-apoth-home-product-img-container br {
+    display: block;
+  }
+  .tr-apoth-home-product-img-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tr-apoth-home-products-tabs-container .nav-link {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tr-apoth-instagram-item {
+    height: 150px;
+  }
+
+  .tr-apoth-intagram-overlay .tr-apoth-home-instagram-preview-logo {
+    top: 35%;
+    left: 35%;
+  }
+
+  .tr-apoth-home-info-box {
+    margin: 25px auto;
+  }
+
+  .tr-apoth-product-info-box {
+    margin: 20px 0;
+  }
+
+  .tr-apoth-product-img-container br {
+    display: block;
+  }
+  .tr-apoth-product-img-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tr-apoth-product-modal .close-product-modal {
+    right: 15%;
+    position: fixed;
+    top: 130px;
+  }
+
+  .tr-apoth-footer-social-link {
+    padding: 11px 10px;
+  }
+
+  .tr-apoth-contact.person span {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 715px) {
+  .tr-apoth-product-modal .close-product-modal {
+    right: 12%;
+    position: fixed;
+    top: 130px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .tr-apoth-product-modal .close-product-modal {
+    right: 10%;
+    position: fixed;
+    top: 130px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .tr-apoth-mobile-menu.sticky {
+    margin-top: -40px;
+  }
+
+  .tr-apoth-home-products p {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+
+  .tr-apoth-instagram-item {
+    height: 120px;
+  }
+
+  .tr-apoth-intagram-overlay .tr-apoth-home-instagram-preview-logo {
+    top: 30%;
+    left: 30%;
+  }
+
+  .tr-apoth-individual-product {
+    width: 90%;
+    margin-bottom: 90px;
+  }
+
+  .tr-apoth-product-modal .close-product-modal {
+    right: 10px;
+  }
+
+  .tr-apoth-bottom-bar-nav ul {
+    float: none;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .tr-apoth-bottom-bar p {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

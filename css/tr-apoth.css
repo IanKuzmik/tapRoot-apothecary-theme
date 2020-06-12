@@ -1,0 +1,2152 @@
+/*
+  @package tapRoot_apothecary
+  ========
+    SASS
+  ========
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+  border-radius: 12px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.tr-apoth-product-modal .modal-info-container span, .tr-apoth-product-info-box span, .tr-apoth-home-info-box span, .tr-apoth-home-product-info-box span, .tr-apoth-carousel-item span {
+  border-radius: 50%;
+  border: 2px #ff9900 solid;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8em;
+}
+.tr-apoth-product-modal .modal-info-container span:before, .tr-apoth-product-info-box span:before, .tr-apoth-home-info-box span:before, .tr-apoth-home-product-info-box span:before, .tr-apoth-carousel-item span:before {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: -1px;
+}
+.tr-apoth-product-modal .modal-info-container h1, .tr-apoth-product-info-box h1, .tr-apoth-home-info-box h1, .tr-apoth-home-product-info-box h1, .tr-apoth-carousel-item h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.tr-apoth-product-modal .modal-info-container hr, .tr-apoth-product-info-box hr, .tr-apoth-home-info-box hr, .tr-apoth-home-product-info-box hr, .tr-apoth-carousel-item hr {
+  height: 2px;
+}
+.tr-apoth-product-modal .modal-info-container p, .tr-apoth-product-info-box p, .tr-apoth-home-info-box p, .tr-apoth-home-product-info-box p, .tr-apoth-carousel-item p {
+  font-family: "Alegreya Sans", sans-serif;
+  letter-spacing: 0.01em;
+}
+.tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+  border: none;
+}
+
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - HEADER
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+  border-radius: 12px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.tr-apoth-product-modal .modal-info-container span, .tr-apoth-product-info-box span, .tr-apoth-home-info-box span, .tr-apoth-home-product-info-box span, .tr-apoth-carousel-item span {
+  border-radius: 50%;
+  border: 2px #ff9900 solid;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8em;
+}
+.tr-apoth-product-modal .modal-info-container span:before, .tr-apoth-product-info-box span:before, .tr-apoth-home-info-box span:before, .tr-apoth-home-product-info-box span:before, .tr-apoth-carousel-item span:before {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: -1px;
+}
+.tr-apoth-product-modal .modal-info-container h1, .tr-apoth-product-info-box h1, .tr-apoth-home-info-box h1, .tr-apoth-home-product-info-box h1, .tr-apoth-carousel-item h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.tr-apoth-product-modal .modal-info-container hr, .tr-apoth-product-info-box hr, .tr-apoth-home-info-box hr, .tr-apoth-home-product-info-box hr, .tr-apoth-carousel-item hr {
+  height: 2px;
+}
+.tr-apoth-product-modal .modal-info-container p, .tr-apoth-product-info-box p, .tr-apoth-home-info-box p, .tr-apoth-home-product-info-box p, .tr-apoth-carousel-item p {
+  font-family: "Alegreya Sans", sans-serif;
+  letter-spacing: 0.01em;
+}
+.tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+  border: none;
+}
+
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-header {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  top: 0;
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: 0px 15px 20px 5px rgba(0, 0, 0, 0.8);
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+.tr-apoth-header.sticky {
+  height: 60px;
+  opacity: 0.9;
+}
+.tr-apoth-header.black {
+  background-color: black;
+}
+
+.tr-apoth-header-container {
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.tr-apoth-header.sticky .tr-apoth-header-container {
+  -webkit-transform: scale(0.8) translateY(-25px);
+  -moz-transform: scale(0.8) translateY(-25px);
+  -ms-transform: scale(0.8) translateY(-25px);
+  -o-transform: scale(0.8) translateY(-25px);
+  transform: scale(0.8) translateY(-25px);
+}
+
+.tr-apoth-header.sticky.hide {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  transform: translateY(-100px);
+}
+
+/*
+  Logo
+  ------------------------------------------
+*/
+.tr-apoth-header-logo {
+  width: 100px;
+  margin-left: 15px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-header-logo:hover, .tr-apoth-header-logo:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/*
+  Nav
+  ------------------------------------------
+*/
+.tr-apoth-navbar {
+  justify-content: center;
+}
+.tr-apoth-navbar ul {
+  list-style: none;
+  display: flex;
+}
+.tr-apoth-navbar a {
+  text-decoration: none;
+}
+.tr-apoth-navbar span {
+  color: #ff9900;
+}
+
+.tr-apoth-navbar .current-menu-item .tr-apoth-nav-item::after {
+  background: black;
+  bottom: 10px;
+  opacity: 0.8;
+  height: 3px;
+}
+
+.tr-apoth-nav-item {
+  position: relative;
+  margin: 0 5px;
+}
+.tr-apoth-nav-item:after {
+  content: "";
+  position: absolute;
+  background: #ff9900;
+  right: 0px;
+  left: 0px;
+  height: 3px;
+  display: block;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  bottom: 0px;
+  opacity: 0;
+  width: 70%;
+  margin: auto;
+}
+.tr-apoth-nav-item:hover:after, .tr-apoth-nav-item:focus:after {
+  bottom: 10px;
+  opacity: 0.8;
+}
+
+.tr-apoth-mobile-menu .tr-apoth-nav-item::after {
+  display: none;
+}
+
+.tr-apoth-nav-toggle-icon {
+  display: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  color: #ff9900;
+  cursor: pointer;
+}
+.tr-apoth-nav-toggle-icon:hover, .tr-apoth-nav-toggle-icon:focus {
+  color: black;
+}
+
+.tr-apoth-header.black .tr-apoth-nav-toggle-icon:hover, .tr-apoth-header.black .tr-apoth-nav-toggle-icon:focus {
+  color: white;
+}
+
+.tr-apoth-nav-toggle-icon::before {
+  vertical-align: middle;
+}
+
+.tr-apoth-mobile-menu {
+  padding: 0;
+}
+
+.tr-apoth-mobile-menu.sticky {
+  margin-top: -30px;
+}
+
+.tr-apoth-mobile-navbar-container {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.tr-apoth-mobile-navbar-container ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.tr-apoth-mobile-navbar-container ul li {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.tr-apoth-mobile-navbar-container ul a {
+  text-decoration: none;
+}
+
+.tr-apoth-mobile-navbar-container .tr-apoth-nav-item {
+  position: relative;
+  color: #ff9900;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-mobile-navbar-container .tr-apoth-nav-item:hover, .tr-apoth-mobile-navbar-container .tr-apoth-nav-item:focus {
+  color: white;
+}
+
+.tr-apoth-mobile-navbar-container ul .current-menu-item .tr-apoth-nav-item {
+  color: white;
+}
+
+/*
+  External Links
+  ------------------------------------------
+*/
+.tr-apoth-header-external-links {
+  height: 40px;
+  text-align: right;
+}
+
+.tr-apoth-external-link {
+  color: #ff9900;
+  padding: 0 15px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-external-link:before {
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  -ms-transition: all 0s ease;
+  -o-transition: all 0s ease;
+  transition: all 0s ease;
+}
+.tr-apoth-external-link:hover, .tr-apoth-external-link:focus {
+  color: black;
+}
+
+.tr-apoth-header.black .tr-apoth-external-link:hover, .tr-apoth-header.black .tr-apoth-external-link:focus {
+  color: white;
+}
+
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - FOOTER
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+  border-radius: 12px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.tr-apoth-product-modal .modal-info-container span, .tr-apoth-product-info-box span, .tr-apoth-home-info-box span, .tr-apoth-home-product-info-box span, .tr-apoth-carousel-item span {
+  border-radius: 50%;
+  border: 2px #ff9900 solid;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8em;
+}
+.tr-apoth-product-modal .modal-info-container span:before, .tr-apoth-product-info-box span:before, .tr-apoth-home-info-box span:before, .tr-apoth-home-product-info-box span:before, .tr-apoth-carousel-item span:before {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: -1px;
+}
+.tr-apoth-product-modal .modal-info-container h1, .tr-apoth-product-info-box h1, .tr-apoth-home-info-box h1, .tr-apoth-home-product-info-box h1, .tr-apoth-carousel-item h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.tr-apoth-product-modal .modal-info-container hr, .tr-apoth-product-info-box hr, .tr-apoth-home-info-box hr, .tr-apoth-home-product-info-box hr, .tr-apoth-carousel-item hr {
+  height: 2px;
+}
+.tr-apoth-product-modal .modal-info-container p, .tr-apoth-product-info-box p, .tr-apoth-home-info-box p, .tr-apoth-home-product-info-box p, .tr-apoth-carousel-item p {
+  font-family: "Alegreya Sans", sans-serif;
+  letter-spacing: 0.01em;
+}
+.tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+  border: none;
+}
+
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-footer {
+  font-family: "Alegreya Sans", sans-serif;
+  border-top: 2px #000 solid;
+  box-shadow: inset 0 15px 15px -15px #000;
+  /*creates a top-only box-shadow */
+  padding-top: 10px;
+  letter-spacing: 0.05em;
+}
+
+.tr-apoth-footer-cat-title {
+  border-left: 5px #ff9900 solid;
+  font-weight: 600;
+  margin-left: 10px;
+  padding-left: 5px;
+  font-size: 26px;
+}
+
+/*
+  Map
+  ------------------------------------------
+*/
+.tr-apoth-navbar-footer-container ul {
+  list-style: none;
+}
+.tr-apoth-navbar-footer-container a {
+  text-decoration: none;
+}
+
+.tr-apoth-navbar-footer-container .current-menu-item .tr-apoth-nav-footer-item {
+  color: black;
+}
+
+.tr-apoth-nav-footer-item {
+  display: block;
+  font-weight: 600;
+  line-height: 2.5em;
+  color: #ff9900;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-nav-footer-item:hover, .tr-apoth-nav-footer-item:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+  Etsy
+  ------------------------------------------
+*/
+.tr-apoth-footer-etsy-item {
+  display: block;
+  line-height: 2.5em;
+}
+
+.tr-apoth-footer-etsy-icon {
+  color: #ff9900;
+  font-size: 1.5em;
+}
+.tr-apoth-footer-etsy-icon:before {
+  display: inline;
+  padding: 5px;
+  border: 2px #ff9900 solid;
+}
+
+.tr-apoth-footer-etsy-link {
+  font-family: "Alegreya Sans", sans-serif;
+  color: black;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-etsy-link:hover, .tr-apoth-footer-etsy-link:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-footer-etsy-hr {
+  background-color: #ff9900;
+  height: 2px;
+  width: 50px;
+}
+
+.tr-apoth-footer-etsy-shop-link {
+  padding: 5px 35px;
+  background-color: black;
+  color: white;
+}
+.tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-footer-etsy-shop-link:focus {
+  color: #ff9900;
+}
+
+/*
+  Contact
+  ------------------------------------------
+*/
+.tr-apoth-footer-logo {
+  width: 100px;
+}
+
+.tr-apoth-footer-contact-hr {
+  background-color: black;
+  height: 2px;
+  width: 100px;
+}
+
+.tr-apoth-footer-contact-address {
+  color: #ff9900;
+}
+
+.tr-apoth-footer-email-link {
+  font-family: "Alegreya Sans", sans-serif;
+  color: black;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-email-link:hover, .tr-apoth-footer-email-link:focus {
+  color: #ff9900;
+}
+
+/*
+  Social
+  ------------------------------------------
+*/
+.tr-apoth-footer-social-container {
+  height: 100%;
+}
+
+.tr-apoth-footer-social-links {
+  position: relative;
+  top: 30%;
+}
+
+.tr-apoth-footer-social-link {
+  font-size: 1.5em;
+  color: #ff9900;
+  padding: 11px 10px;
+  margin: 0 5px;
+  border: 3px #ff9900 solid;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-social-link:before {
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  -ms-transition: all 0s ease;
+  -o-transition: all 0s ease;
+  transition: all 0s ease;
+}
+.tr-apoth-footer-social-link:hover, .tr-apoth-footer-social-link:focus {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 3px white solid;
+}
+
+/*
+  Bottom Bar
+  ------------------------------------------
+*/
+.tr-apoth-bottom-bar {
+  background-color: black;
+  color: #ff9900;
+  font-size: 12px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.tr-apoth-bottom-bar p, .tr-apoth-bottom-bar ul {
+  margin: 0;
+}
+
+.tr-apoth-bottom-bar-nav ul {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+.tr-apoth-bottom-bar-nav ul li:first-child {
+  border-left: 1px #ff9900 solid;
+}
+.tr-apoth-bottom-bar-nav a {
+  text-decoration: none;
+}
+.tr-apoth-bottom-bar-nav span {
+  color: white;
+  border-right: 1px #ff9900 solid;
+  padding: 0 5px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-bottom-bar-nav span:hover, .tr-apoth-bottom-bar-nav span:focus {
+  color: #ff9900;
+}
+
+/*
+  ===========
+    GENERAL
+  ===========
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body div#primary {
+  margin-top: 90px;
+}
+
+a:hover, button:hover,
+a:focus, button:focus {
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+.table {
+  display: table;
+}
+
+.table-cell {
+  display: table-cell;
+}
+
+.tr-apoth-h1-text {
+  font-family: "Henny Penny", cursive;
+  font-size: 36px;
+  color: #ff9900;
+  text-shadow: 0px 0px 20px #d6d6d6;
+}
+
+.tr-apoth-handshake-icon-fix::before {
+  transform: translateX(-5px);
+}
+
+/*
+  =============
+    HOME PAGE
+  =============
+*/
+/*
+  Hero
+  ------------------------------------------
+*/
+.tr-apoth-home-hero {
+  background-image: url("../img/logo-flower-wallpaper-black.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+.tr-apoth-home-hero .row {
+  height: 100vh;
+}
+.tr-apoth-home-hero .tr-apoth-home-hero-left {
+  margin: 0;
+}
+.tr-apoth-home-hero .tr-apoth-home-hero-right {
+  padding: 0;
+}
+
+.tr-apoth-home-hero-title-container {
+  vertical-align: middle;
+}
+
+.tr-apoth-home-hero-title {
+  display: block;
+  color: #ff9900;
+  font-family: "Henny Penny", cursive;
+  margin: 0;
+  line-height: 0.8em;
+  text-shadow: 0px 0px 80px #d6d6d6;
+}
+.tr-apoth-home-hero-title.tr-text-xochis {
+  font-size: 10em;
+}
+.tr-apoth-home-hero-title.tr-text-apothecary {
+  font-size: 4em;
+  letter-spacing: 0.05em;
+  margin-left: 2em;
+}
+
+.tr-apoth-home-hero-carousel {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.tr-apoth-carousel-item h1 {
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+.tr-apoth-carousel-item span {
+  background-color: black;
+  color: #ff9900;
+  padding: 10px;
+}
+.tr-apoth-carousel-item hr {
+  width: 50px;
+  background-color: black;
+  margin: 0 auto;
+}
+.tr-apoth-carousel-item p {
+  margin: 20px 50px;
+  font-size: 1.2em;
+}
+.tr-apoth-carousel-item button {
+  background-color: black;
+  color: white;
+  padding: 5px 35px;
+}
+.tr-apoth-carousel-item button:hover, .tr-apoth-carousel-item button:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-carousel-control {
+  opacity: 1;
+}
+
+.tr-apoth-carousel-arrow {
+  font-size: 2em;
+  color: black;
+  opacity: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-carousel-arrow:hover, .tr-apoth-carousel-arrow:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-home-hero-carousel ol.tr-apoth-carousel-dots {
+  bottom: 15%;
+  margin: 0 2px;
+}
+
+.carousel-indicators li.tr-apoth-dot {
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 1;
+  border-radius: 50%;
+}
+.carousel-indicators li.tr-apoth-dot:hover, .carousel-indicators li.tr-apoth-dot:focus, .carousel-indicators li.tr-apoth-dot.active {
+  background-color: #ff9900;
+}
+
+.tr-apoth-carousel-container {
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+/*
+  Quotes
+  ------------------------------------------
+*/
+.tr-apoth-home-quote {
+  padding: 50px 0;
+  background-image: url("../img/logo-flower-wallpaper-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 -5px 15px -5px #000, inset 0 5px 15px -5px #000;
+}
+
+.tr-apoth-home-quote-text {
+  opacity: 0;
+  color: white;
+  -webkit-transition: opacity 0.8s ease;
+  -moz-transition: opacity 0.8s ease;
+  -ms-transition: opacity 0.8s ease;
+  -o-transition: opacity 0.8s ease;
+  transition: opacity 0.8s ease;
+  -webkit-transition: color 2.6s ease;
+  -moz-transition: color 2.6s ease;
+  -ms-transition: color 2.6s ease;
+  -o-transition: color 2.6s ease;
+  transition: color 2.6s ease;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #ff9900;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+/*
+  Products
+  ------------------------------------------
+*/
+.tr-apoth-home-products {
+  background-image: url("../img/logo-flower-wallpaper-black.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+
+.tr-apoth-home-products p {
+  color: white;
+  font-weight: 600;
+}
+
+.tr-apoth-home-products-tabs-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  border-radius: 5px;
+  min-height: 80vh;
+}
+.tr-apoth-home-products-tabs-container ul {
+  border-color: black;
+}
+.tr-apoth-home-products-tabs-container li {
+  width: 16.6%;
+  text-align: center;
+}
+
+.tr-apoth-home-products-tabs-container .nav-item a.tr-apoth-home-products-tab {
+  font-family: "Alegreya Sans", sans-serif;
+  color: black;
+  border-color: #ff9900 #ff9900 black;
+  background-color: white;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-home-products-tabs-container .nav-item a.tr-apoth-home-products-tab:hover:not(.active), .tr-apoth-home-products-tabs-container .nav-item a.tr-apoth-home-products-tab:focus:not(.active) {
+  border-bottom: none;
+  border-color: white;
+  color: #ff9900;
+}
+
+.tr-apoth-home-products-tabs-container .nav-item a.tr-apoth-home-products-tab.active {
+  background-color: black;
+  color: #ff9900;
+  font-weight: 600;
+}
+
+.tr-apoth-home-product-info-box {
+  color: white;
+  padding: 50px 0;
+}
+.tr-apoth-home-product-info-box span {
+  background-color: white;
+  color: #ff9900;
+  padding: 10px;
+}
+.tr-apoth-home-product-info-box h1 {
+  margin-top: 20px;
+}
+.tr-apoth-home-product-info-box hr {
+  background-color: #ff9900;
+  width: 50px;
+  margin: 0 auto;
+}
+.tr-apoth-home-product-info-box p {
+  margin: 20px 50px;
+  font-weight: 400;
+}
+.tr-apoth-home-product-info-box button {
+  color: white;
+  background-color: #ff9900;
+  padding: 5px 35px;
+}
+.tr-apoth-home-product-info-box button:hover, .tr-apoth-home-product-info-box button:focus {
+  color: black;
+}
+
+.tr-apoth-home-product-img-container {
+  padding: 50px 0;
+}
+
+.tr-apoth-home-product-img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*
+  Instagram
+  ------------------------------------------
+*/
+.tr-apoth-home-instagram {
+  background-image: url("../img/logo-flower-wallpaper-black.png");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+
+.tr-apoth-instagram-item {
+  position: relative;
+  display: inline-block;
+  width: calc((100% / 4) - 12px);
+  height: 300px;
+  margin: 0px 3px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.tr-apoth-instagram-media {
+  width: 100%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.tr-apoth-intagram-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-intagram-overlay:hover, .tr-apoth-intagram-overlay:focus {
+  opacity: 1;
+}
+.tr-apoth-intagram-overlay .tr-apoth-home-instagram-preview-logo {
+  position: absolute;
+  color: #ff9900;
+  top: 40%;
+  left: 40%;
+  font-size: 2em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/*
+  Home Info
+  ------------------------------------------
+*/
+.tr-apoth-home-info {
+  padding: 50px 0;
+  background-image: url("../img/logo-flower-wallpaper-white.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 5px 15px -5px #000;
+}
+
+.tr-apoth-home-info-box span {
+  opacity: 0;
+  position: relative;
+  padding: 50px;
+  background-color: black;
+  color: #ff9900;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.tr-apoth-home-info-box span:before {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  font-size: 1.5em;
+}
+.tr-apoth-home-info-box h1 {
+  text-shadow: 0px 0px 5px #ff9900;
+  margin-top: 20px;
+}
+.tr-apoth-home-info-box p {
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.tr-apoth-home-info-box a {
+  font-family: "Alegreya Sans", sans-serif;
+  display: block;
+  font-size: 1.3em;
+  padding-left: 15px;
+  color: black;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-home-info-box a:hover, .tr-apoth-home-info-box a:focus {
+  color: #ff9900;
+}
+.tr-apoth-home-info-box button {
+  background-color: black;
+  color: white;
+  padding: 5px 35px;
+}
+.tr-apoth-home-info-box button:hover, .tr-apoth-home-info-box button:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-home-map {
+  height: 500px;
+  margin-top: 50px;
+  border: 2px black solid;
+  box-shadow: 3px 3px 10px black;
+}
+.tr-apoth-home-map .gm-style-pbc {
+  display: none;
+}
+
+.tr-apoth-home-map-info-window p {
+  margin: 0;
+}
+
+/*
+  =================
+    PRODUCTS PAGE
+  =================
+*/
+.tr-apoth-featured-products-carousel {
+  height: 100vh;
+}
+
+.tr-apoth-featured-products-carousel .tr-apoth-carousel-dots {
+  bottom: 5%;
+}
+
+.tr-apoth-product-section {
+  padding: 50px 0;
+}
+
+.tr-apoth-featured-product-container h1 {
+  margin: 10px 50px;
+}
+.tr-apoth-featured-product-container hr {
+  margin: 0 50px;
+  background-color: #ff9900;
+}
+.tr-apoth-featured-product-container p {
+  font-size: 1.3em;
+}
+.tr-apoth-featured-product-container p.desc {
+  font-weight: 400;
+}
+.tr-apoth-featured-product-container p.price {
+  color: green;
+  font-weight: 200;
+}
+.tr-apoth-featured-product-container p.ingredients {
+  font-weight: 200;
+}
+.tr-apoth-featured-product-container button {
+  margin: 0 50px;
+}
+.tr-apoth-featured-product-container img {
+  width: 80%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.tr-apoth-product-info-box {
+  color: white;
+  padding: 50px 0;
+}
+.tr-apoth-product-info-box span {
+  background-color: white;
+  color: #ff9900;
+  padding: 10px;
+}
+.tr-apoth-product-info-box h1 {
+  margin-top: 20px;
+}
+.tr-apoth-product-info-box hr {
+  background-color: #ff9900;
+  width: 50px;
+  margin: 0 auto;
+}
+.tr-apoth-product-info-box p {
+  margin: 20px 50px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+.tr-apoth-product-info-box button {
+  color: white;
+  background-color: #ff9900;
+  padding: 5px 35px;
+}
+.tr-apoth-product-info-box button:hover, .tr-apoth-product-info-box button:focus {
+  color: black;
+}
+.tr-apoth-product-info-box.white {
+  color: black;
+}
+.tr-apoth-product-info-box.white span {
+  background-color: black;
+}
+.tr-apoth-product-info-box.white button {
+  color: black;
+}
+.tr-apoth-product-info-box.white button:hover, .tr-apoth-product-info-box.white button:focus {
+  color: white;
+}
+
+.tr-apoth-products-tea, .tr-apoth-products-body, .tr-apoth-products-jewelry {
+  background: black;
+}
+
+.tr-apoth-products-gallery {
+  display: none;
+}
+.tr-apoth-products-gallery.tea, .tr-apoth-products-gallery.body, .tr-apoth-products-gallery.jewelry {
+  color: white;
+  background-color: black;
+}
+.tr-apoth-products-gallery.tea button, .tr-apoth-products-gallery.body button, .tr-apoth-products-gallery.jewelry button {
+  background-color: white;
+  color: black;
+}
+.tr-apoth-products-gallery.incense, .tr-apoth-products-gallery.syrup, .tr-apoth-products-gallery.sundries {
+  color: black;
+  background-color: white;
+}
+.tr-apoth-products-gallery.incense button, .tr-apoth-products-gallery.syrup button, .tr-apoth-products-gallery.sundries button {
+  background-color: black;
+  color: white;
+}
+
+.tr-apoth-individual-product {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 30px;
+}
+.tr-apoth-individual-product img {
+  width: 70%;
+  border-radius: 50%;
+}
+.tr-apoth-individual-product h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.tr-apoth-individual-product hr {
+  background-color: #ff9900;
+  width: 50%;
+}
+.tr-apoth-individual-product p {
+  font-family: "Alegreya Sans", sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+.tr-apoth-individual-product button {
+  padding: 5px 35px;
+}
+.tr-apoth-individual-product button:hover, .tr-apoth-individual-product button:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-products-gallery button.tr-apoth-hide-product-gallery {
+  color: #ff9900;
+  font-family: "Alegreya Sans", sans-serif;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-products-gallery button.tr-apoth-hide-product-gallery:hover, .tr-apoth-products-gallery button.tr-apoth-hide-product-gallery:focus {
+  color: white;
+}
+
+.tr-apoth-products-gallery.incense button.tr-apoth-hide-product-gallery:hover, .tr-apoth-products-gallery.incense button.tr-apoth-hide-product-gallery:focus,
+.tr-apoth-products-gallery.syrup button.tr-apoth-hide-product-gallery:hover,
+.tr-apoth-products-gallery.syrup button.tr-apoth-hide-product-gallery:focus,
+.tr-apoth-products-gallery.sundries button.tr-apoth-hide-product-gallery:hover,
+.tr-apoth-products-gallery.sundries button.tr-apoth-hide-product-gallery:focus {
+  color: black;
+}
+
+.tr-apoth-product-modal {
+  z-index: 50;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tr-apoth-product-modal .container {
+  overflow: scroll;
+  height: 80%;
+  position: relative;
+  background-color: white;
+  background-image: url(../img/logo-flower-wallpaper-white.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: 120px;
+  padding: 50px 0;
+}
+.tr-apoth-product-modal .container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.tr-apoth-product-modal .container .row {
+  position: relative;
+}
+
+.tr-apoth-product-modal .product-modal-image {
+  width: 80%;
+}
+
+.tr-apoth-product-modal .modal-info-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.tr-apoth-product-modal .modal-info-container h2 {
+  font-size: 26px;
+  margin-top: 20px;
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.tr-apoth-product-modal .modal-info-container hr {
+  background-color: #ff9900;
+  width: 80%;
+}
+.tr-apoth-product-modal .modal-info-container p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tr-apoth-product-modal .close-product-modal {
+  position: absolute;
+  top: -45px;
+  right: 25px;
+  font-size: 1.5em;
+  color: black;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-product-modal .close-product-modal:hover, .tr-apoth-product-modal .close-product-modal:focus {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+/*
+  ==============
+    ABOUT PAGE
+  ==============
+*/
+.tr-apoth-about-hero {
+  position: relative;
+  height: 100vh;
+}
+
+.tr-apoth-about-hero .row {
+  height: 100%;
+  padding: 50px 0;
+  background: -moz-linear-gradient(90deg, black 50%, white 50%);
+  background: -webkit-linear-gradient(90deg, black 50%, white 50%);
+  background: linear-gradient(90deg, black 50%, white 50%);
+}
+
+.tr-apoth-floating-flower div {
+  height: 8em;
+  width: 8em;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+}
+.tr-apoth-floating-flower hr {
+  background-color: white;
+  height: 5px;
+  width: 8em;
+  mix-blend-mode: exclusion;
+  margin: auto;
+}
+
+.tr-apoth-about-ipa-logo {
+  background-position: center;
+  background-size: 25em;
+  background-repeat: no-repeat;
+}
+
+.tr-apoth-about-hero-info-box h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: #ff9900;
+}
+.tr-apoth-about-hero-info-box p {
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 20px 40px 20px 0;
+  font-weight: 200;
+  letter-spacing: 0.01em;
+  font-size: 1.2em;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.tr-apoth-about-section .tr-apoth-about-image {
+  opacity: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  background-position: center;
+  background-size: cover;
+  padding: 250px 0;
+}
+
+.tr-apoth-about-section.black {
+  background-color: black;
+}
+
+.tr-apoth-about-info-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 30px 15px;
+  text-align: left;
+}
+.tr-apoth-about-info-box h1 {
+  font-family: "Henny Penny", cursive;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.tr-apoth-about-info-box hr {
+  background: -moz-linear-gradient(90deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(90deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  margin-left: 0;
+  width: 300px;
+  height: 2px;
+}
+.tr-apoth-about-info-box p {
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 20px 15% 20px 0;
+  font-weight: 400;
+  font-size: 1.1em;
+  letter-spacing: 0.01em;
+}
+
+.tr-apoth-about-section.black .tr-apoth-about-info-box {
+  text-align: right;
+}
+.tr-apoth-about-section.black .tr-apoth-about-info-box h1 {
+  color: white;
+}
+.tr-apoth-about-section.black .tr-apoth-about-info-box hr {
+  background: -moz-linear-gradient(270deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(270deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(270deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  margin-right: 0;
+  margin-left: auto;
+}
+.tr-apoth-about-section.black .tr-apoth-about-info-box p {
+  color: white;
+  margin: 20px 0 20px 15%;
+}
+
+.tr-apoth-about-section.black .tr-apoth-about-info-box .left {
+  text-align: left;
+  margin-top: 20px;
+}
+.tr-apoth-about-section.black .tr-apoth-about-info-box .left hr {
+  background: -moz-linear-gradient(90deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(90deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(90deg, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  margin-left: 0;
+  width: 300px;
+}
+.tr-apoth-about-section.black .tr-apoth-about-info-box .left p {
+  margin: 20px 15% 20px 0;
+}
+
+.tr-apoth-about-map-container {
+  padding: 0;
+}
+
+.tr-apoth-about-map-container .tr-apoth-about-map {
+  height: 498px;
+  width: 100%;
+  border-top: 2px black solid;
+}
+.tr-apoth-about-map-container .tr-apoth-about-map .gm-style-pbc {
+  display: none;
+}
+.tr-apoth-about-map-container .tr-apoth-about-map .tr-apoth-home-map-info-window p {
+  margin: 0;
+}
+
+/*
+  ================
+    CONTACT PAGE
+  ================
+*/
+.tr-apoth-contact-info-container {
+  padding: 50px 0;
+  background-image: url("../img/logo-flower-wallpaper-black.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tr-apoth-contact-info-container .tr-apoth-contact {
+  color: white;
+  margin: auto 0;
+}
+.tr-apoth-contact-info-container .tr-apoth-contact span {
+  position: relative;
+  padding: 45px;
+  background-color: white;
+  color: #ff9900;
+  border-radius: 50%;
+  border: 2px #ff9900 solid;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8em;
+}
+.tr-apoth-contact-info-container .tr-apoth-contact span:before {
+  position: absolute;
+  top: 24%;
+  right: 21%;
+  font-size: 1.8em;
+  margin: 0 auto;
+}
+.tr-apoth-contact-info-container .tr-apoth-contact h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.tr-apoth-contact-info-container .tr-apoth-contact.email a {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 1.2em;
+  color: white;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-contact-info-container .tr-apoth-contact.email a:hover, .tr-apoth-contact-info-container .tr-apoth-contact.email a:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-contact-info-container .tr-apoth-contact.person p {
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  font-size: 1.2em;
+}
+.tr-apoth-contact-info-container .tr-apoth-contact.person button {
+  background-color: white;
+  color: black;
+  padding: 5px 35px;
+  border: none;
+}
+.tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-contact-form {
+  padding: 40px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+.tr-apoth-contact-form h1 {
+  font-family: "Henny Penny", cursive;
+  font-size: 48px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.tr-apoth-contact-form button {
+  background-color: black;
+  color: white;
+  width: 50%;
+  padding: 5px 25px;
+}
+.tr-apoth-contact-form button:hover, .tr-apoth-contact-form button:focus {
+  color: #ff9900;
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+}
+.tr-apoth-contact-form button:disabled {
+  border: 1px black solid;
+  background-color: transparent;
+  color: black;
+}
+.tr-apoth-contact-form button:disabled:hover, .tr-apoth-contact-form button:disabled:focus {
+  cursor: default;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+.tr-apoth-contact-form .tr-apoth-form-group {
+  margin-bottom: 40px;
+}
+.tr-apoth-contact-form .tr-apoth-form-group .tr-apoth-form-control {
+  border: none;
+  width: 80%;
+  border-bottom: 1px #aaa solid;
+  border-radius: 0;
+  padding: 8px 15px;
+  outline: none;
+  box-shadow: none;
+}
+.tr-apoth-contact-form .tr-apoth-form-group .tr-apoth-form-control:focus, .tr-apoth-contact-form .tr-apoth-form-group .tr-apoth-form-control:active {
+  box-shadow: none;
+  border-color: #ff9900;
+}
+.tr-apoth-contact-form .tr-apoth-form-group .form-control-msg {
+  display: none;
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
+
+.tr-apoth-contact-form .tr-apoth-submit-msg {
+  margin-top: 10px;
+}
+
+.is-invalid .form-control-msg {
+  display: block;
+}
+
+/*
+  =======
+    404
+  =======
+*/
+.tr-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  height: 80vh;
+  background-color: black;
+  color: #ff9900;
+}
+
+.tr-404 h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.02em;
+  font-size: 4em;
+}
+
+.tr-404 p {
+  font-family: "Alegreya Sans", sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 1.5em;
+}
+
+/*
+  @package tapRoot_apothecary
+  ========
+    SASS
+  ========
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-footer-etsy-shop-link, .tr-apoth-carousel-item button, .tr-apoth-home-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-product-info-box button, .tr-apoth-individual-product button, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-contact-form button {
+  border-radius: 12px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-contact-form button:hover, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-carousel-item button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-contact-form button:focus {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+.tr-apoth-carousel-item span, .tr-apoth-home-product-info-box span, .tr-apoth-home-info-box span, .tr-apoth-product-info-box span, .tr-apoth-product-modal .modal-info-container span {
+  border-radius: 50%;
+  border: 2px #ff9900 solid;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.8em;
+}
+.tr-apoth-carousel-item span:before, .tr-apoth-home-product-info-box span:before, .tr-apoth-home-info-box span:before, .tr-apoth-product-info-box span:before, .tr-apoth-product-modal .modal-info-container span:before {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: -1px;
+}
+.tr-apoth-carousel-item h1, .tr-apoth-home-product-info-box h1, .tr-apoth-home-info-box h1, .tr-apoth-product-info-box h1, .tr-apoth-product-modal .modal-info-container h1 {
+  font-family: "Henny Penny", cursive;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.tr-apoth-carousel-item hr, .tr-apoth-home-product-info-box hr, .tr-apoth-home-info-box hr, .tr-apoth-product-info-box hr, .tr-apoth-product-modal .modal-info-container hr {
+  height: 2px;
+}
+.tr-apoth-carousel-item p, .tr-apoth-home-product-info-box p, .tr-apoth-home-info-box p, .tr-apoth-product-info-box p, .tr-apoth-product-modal .modal-info-container p {
+  font-family: "Alegreya Sans", sans-serif;
+  letter-spacing: 0.01em;
+}
+.tr-apoth-carousel-item button, .tr-apoth-home-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-product-info-box button, .tr-apoth-product-modal .modal-info-container button {
+  border: none;
+}
+
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+@media only screen and (max-width: 992px) {
+  .tr-apoth-navbar .tr-apoth-navbar-container {
+    display: none;
+  }
+
+  .tr-apoth-navbar .tr-apoth-nav-toggle-icon {
+    display: block;
+    text-align: center;
+  }
+
+  .tr-apoth-home-hero-title.tr-text-xochis {
+    font-size: 6em;
+  }
+
+  .tr-apoth-home-hero-title.tr-text-apothecary {
+    font-size: 2em;
+  }
+
+  .tr-apoth-home-product-img-container {
+    padding: 0;
+  }
+  .tr-apoth-home-product-img-container br {
+    display: none;
+  }
+  .tr-apoth-home-product-img-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tr-apoth-home-product-info-box {
+    margin: 20px 10%;
+  }
+
+  .tr-apoth-instagram-item {
+    height: 200px;
+  }
+
+  .tr-apoth-products-featured {
+    display: none;
+  }
+
+  .tr-apoth-individual-product {
+    width: 45%;
+  }
+
+  .tr-apoth-product-img-container {
+    padding: 0;
+  }
+  .tr-apoth-product-img-container br {
+    display: none;
+  }
+  .tr-apoth-product-img-container img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .tr-apoth-product-info-box {
+    margin: 20px 10%;
+  }
+
+  .tr-apoth-about-ipa-logo {
+    display: none;
+  }
+
+  .tr-apoth-floating-flower {
+    display: none;
+  }
+
+  .tr-apoth-about-hero-info-box p {
+    margin: 20px 40px;
+    font-weight: 400;
+  }
+
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box {
+    text-align: center;
+  }
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box p {
+    margin: 20px 0;
+  }
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box hr {
+    margin: auto;
+    background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  .tr-apoth-footer-social-link {
+    padding: 4px 3px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body div#primary {
+    margin-top: 130px;
+  }
+
+  .tr-apoth-header {
+    height: 130px;
+  }
+
+  .tr-apoth-header.sticky {
+    height: 90px;
+  }
+
+  .tr-apoth-nav-toggle-icon {
+    text-align: left;
+  }
+
+  .tr-apoth-home-hero-left {
+    height: 40%;
+  }
+
+  .tr-apoth-home-hero-right.tr-apoth-home-hero-right {
+    height: 60%;
+    padding-bottom: 20px;
+  }
+
+  .tr-apoth-home-hero-carousel ol.tr-apoth-carousel-dots {
+    bottom: 0;
+  }
+
+  .tr-apoth-home-products p {
+    font-size: 0.9em;
+  }
+
+  .tr-apoth-home-product-info-box {
+    margin: 20px 0;
+  }
+
+  .tr-apoth-home-product-img-container br {
+    display: block;
+  }
+  .tr-apoth-home-product-img-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tr-apoth-home-products-tabs-container .nav-link {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tr-apoth-instagram-item {
+    height: 150px;
+  }
+
+  .tr-apoth-intagram-overlay .tr-apoth-home-instagram-preview-logo {
+    top: 35%;
+    left: 35%;
+  }
+
+  .tr-apoth-home-info-box {
+    margin: 25px auto;
+  }
+
+  .tr-apoth-product-info-box {
+    margin: 20px 0;
+  }
+
+  .tr-apoth-product-img-container br {
+    display: block;
+  }
+  .tr-apoth-product-img-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tr-apoth-product-modal .close-product-modal {
+    right: 15%;
+    position: fixed;
+    top: 130px;
+  }
+
+  .tr-apoth-footer-social-link {
+    padding: 11px 10px;
+  }
+
+  .tr-apoth-contact.person span {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 715px) {
+  .tr-apoth-product-modal .close-product-modal {
+    right: 12%;
+    position: fixed;
+    top: 130px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .tr-apoth-product-modal .close-product-modal {
+    right: 10%;
+    position: fixed;
+    top: 130px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .tr-apoth-mobile-menu.sticky {
+    margin-top: -40px;
+  }
+
+  .tr-apoth-home-products p {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+
+  .tr-apoth-instagram-item {
+    height: 120px;
+  }
+
+  .tr-apoth-intagram-overlay .tr-apoth-home-instagram-preview-logo {
+    top: 30%;
+    left: 30%;
+  }
+
+  .tr-apoth-individual-product {
+    width: 90%;
+    margin-bottom: 90px;
+  }
+
+  .tr-apoth-product-modal .close-product-modal {
+    right: 10px;
+  }
+
+  .tr-apoth-bottom-bar-nav ul {
+    float: none;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .tr-apoth-bottom-bar p {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=tr-apoth.css.map */

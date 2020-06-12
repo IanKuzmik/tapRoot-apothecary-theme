@@ -1,0 +1,92 @@
+/*
+  @package tapRoot_apothecary
+  ===============
+    SASS: ADMIN
+  ===============
+*/
+
+@import '../base/mixins';
+@import '../base/placeholders';
+@import '../base/variables';
+
+.tr-apoth-admin-form {
+  input.tr-admin-textbox{
+    width: 350px;
+  }
+  input#submit, button{
+    font-family: $plain-text;
+    color: $xochis-white;
+    background-color: $xochis-black;
+    border-radius: 5px;
+    font-weight: 200;
+    padding: 5px 35px;
+    letter-spacing: 0.05em;
+    border: none;
+    @include animate( all, 0.4s );
+    &:hover, &:focus { color: $xochis-orange; cursor: pointer; }
+  }
+}
+
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-admin-image-preview-container { width: 200px; height: 200px; margin: 5px 0; }
+.tr-apoth-admin-image-preview { width: 50%; }
+
+/*
+  Products
+  ------------------------------------------
+*/
+.tr-apoth-admin-product-inputs {
+  input,
+  textarea,
+  .input-btn {
+    display: block;
+    width: 300px;
+    margin: 15px 0;
+  }
+  .input-btn { background-color: transparent; color: $xochis-black; border: 2px black solid; }
+}
+.tr-apoth-product-preivew-container { height: 650px; overflow: scroll; }
+.tr-apoth-individual-product {
+  height: 200px;
+  display: flex;
+  background-color: #ccc;
+  margin: 10px 0;
+  padding: 0 10px;
+  align-items: center;
+  text-align: center;
+  .tr-apoth-admin-product-preview-container-left {
+    flex-flow: column;
+    display: flex;
+    justify-content: center;
+    img {width: 80%; margin: 0 auto; }
+  }
+  button {
+    color: $xochis-white;
+    background-color: $xochis-black;
+    border-radius: 5px;
+    font-weight: 200;
+    border: none;
+    font-size: .8em;
+    margin: 0 10px;
+    &:hover, &:focus {
+      @include transform( scale(1) );
+      color: $xochis-orange;
+    }
+  }
+}
+
+
+/*
+  Instagram
+  ------------------------------------------
+*/
+.tr-apoth-instagram-refresh-spinner {
+  opacity: 0;
+  font-size: 1em;
+  color: $xochis-orange;
+  margin-left: 5px;
+  @include animate( all, 0.4s );
+}

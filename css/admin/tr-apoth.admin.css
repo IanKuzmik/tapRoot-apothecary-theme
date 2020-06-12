@@ -1,0 +1,180 @@
+/*
+  @package tapRoot_apothecary
+  ===============
+    SASS: ADMIN
+  ===============
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-admin-form input.tr-admin-textbox {
+  width: 350px;
+}
+.tr-apoth-admin-form input#submit, .tr-apoth-admin-form button {
+  font-family: Verdana, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: 200;
+  padding: 5px 35px;
+  letter-spacing: 0.05em;
+  border: none;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-admin-form input#submit:hover, .tr-apoth-admin-form input#submit:focus, .tr-apoth-admin-form button:hover, .tr-apoth-admin-form button:focus {
+  color: #ff9900;
+  cursor: pointer;
+}
+
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-admin-image-preview-container {
+  width: 200px;
+  height: 200px;
+  margin: 5px 0;
+}
+
+.tr-apoth-admin-image-preview {
+  width: 50%;
+}
+
+/*
+  Products
+  ------------------------------------------
+*/
+.tr-apoth-admin-product-inputs input,
+.tr-apoth-admin-product-inputs textarea,
+.tr-apoth-admin-product-inputs .input-btn {
+  display: block;
+  width: 300px;
+  margin: 15px 0;
+}
+.tr-apoth-admin-product-inputs .input-btn {
+  background-color: transparent;
+  color: black;
+  border: 2px black solid;
+}
+
+.tr-apoth-product-preivew-container {
+  height: 650px;
+  overflow: scroll;
+}
+
+.tr-apoth-individual-product {
+  height: 200px;
+  display: flex;
+  background-color: #ccc;
+  margin: 10px 0;
+  padding: 0 10px;
+  align-items: center;
+  text-align: center;
+}
+.tr-apoth-individual-product .tr-apoth-admin-product-preview-container-left {
+  flex-flow: column;
+  display: flex;
+  justify-content: center;
+}
+.tr-apoth-individual-product .tr-apoth-admin-product-preview-container-left img {
+  width: 80%;
+  margin: 0 auto;
+}
+.tr-apoth-individual-product button {
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-weight: 200;
+  border: none;
+  font-size: 0.8em;
+  margin: 0 10px;
+}
+.tr-apoth-individual-product button:hover, .tr-apoth-individual-product button:focus {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  color: #ff9900;
+}
+
+/*
+  Instagram
+  ------------------------------------------
+*/
+.tr-apoth-instagram-refresh-spinner {
+  opacity: 0;
+  font-size: 1em;
+  color: #ff9900;
+  margin-left: 5px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+/*# sourceMappingURL=tr-apoth.admin.css.map */

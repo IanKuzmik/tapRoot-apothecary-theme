@@ -1,0 +1,38 @@
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+
+@import 'mixins';
+@import 'variables';
+
+%tr-apoth-btn-link {
+  border-radius: 12px;
+  font-family: $plain-text;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  @include animate( all, 0.4s );
+  &:hover, &:focus {
+    @include transform( scale(0.9) );
+    cursor: pointer;
+  }
+}
+
+%tr-apoth-info-box {
+  span {
+    border-radius: 50%;
+    border: 2px $xochis-orange solid;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8em;
+    &:before { display: block; margin: 0 auto; padding: 0; margin-left: -1px; }
+  }
+  h1 { font-family: $featured-text; letter-spacing: .05em; font-weight: 600; }
+  hr { height: 2px; }
+  p { font-family: $standard-text; letter-spacing: .01em; }
+  button { @extend %tr-apoth-btn-link; border: none; }
+}

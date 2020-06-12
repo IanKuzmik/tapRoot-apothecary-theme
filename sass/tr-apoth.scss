@@ -1,0 +1,647 @@
+/*
+  @package tapRoot_apothecary
+  ========
+    SASS
+  ========
+*/
+
+@import 'base/mixins';
+@import 'base/placeholders';
+@import 'base/variables';
+
+@import 'sections/header';
+@import 'sections/footer';
+
+/*
+  ===========
+    GENERAL
+  ===========
+*/
+
+html { scroll-behavior: smooth; }
+body div#primary { margin-top: 90px; } // for sticky header
+a:hover, button:hover,
+a:focus, button:focus { outline: none; border: none; text-decoration: none; }
+
+.table { display: table; }
+.table-cell { display: table-cell; }
+
+.tr-apoth-h1-text {
+  font-family: $featured-text;
+  font-size: $text-l;
+  color: $xochis-orange;
+  text-shadow: 0px 0px 20px #d6d6d6;
+}
+
+.tr-apoth-carousel-item { @extend %tr-apoth-info-box; }
+.tr-apoth-handshake-icon-fix::before { transform: translateX(-5px); }
+
+/*
+  =============
+    HOME PAGE
+  =============
+*/
+/*
+  Hero
+  ------------------------------------------
+*/
+.tr-apoth-home-hero{
+  background-image: $logo-flower-wallpaper-black;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: $xochis-black;
+  .row { height: 100vh; }
+  .tr-apoth-home-hero-left {
+    margin: 0;
+  }
+  .tr-apoth-home-hero-right {
+    padding: 0;
+  }
+}
+
+// title
+.tr-apoth-home-hero-title-container { vertical-align: middle; }
+.tr-apoth-home-hero-title {
+  display: block;
+  color: $xochis-orange;
+  font-family: $featured-text;
+  margin: 0;
+  line-height: 0.8em;
+  text-shadow: 0px 0px 80px #d6d6d6;
+  &.tr-text-xochis { font-size: 10em; }
+  &.tr-text-apothecary { font-size: 4em; letter-spacing: 0.05em; margin-left: 2em;}
+}
+
+// carousel
+.tr-apoth-home-hero-carousel { height: 100%; background-color: rgba(255, 255 ,255, 0.6); }
+.tr-apoth-carousel-item {
+  h1 { font-size: 2.5em; margin-top: 20px; }
+  span { background-color: $xochis-black; color: $xochis-orange; padding: 10px; }
+  hr { width: 50px; background-color: $xochis-black; margin: 0 auto; }
+  p { margin: 20px 50px; font-size: 1.2em; }
+  button {
+    background-color: $xochis-black;
+    color: $xochis-white;
+    padding: 5px 35px;
+    &:hover, &:focus { color: $xochis-orange; }
+  }
+}
+.tr-apoth-carousel-control { opacity: 1; }
+.tr-apoth-carousel-arrow {
+  font-size: 2em;
+  color: $xochis-black;
+  opacity: 1;
+  @include animate( all, 0.4s );
+  &:hover, &:focus { color: $xochis-orange; }
+}
+
+.tr-apoth-home-hero-carousel ol.tr-apoth-carousel-dots{ bottom: 15%; margin: 0 2px; }
+.carousel-indicators li.tr-apoth-dot {
+ background-color: $xochis-black;
+ width: 10px;
+ height: 10px;
+ @include animate( all, 0.4s );
+ opacity: 1;
+ border-radius: 50%;
+ &:hover, &:focus, &.active { background-color: $xochis-orange; }
+}
+
+.tr-apoth-carousel-container {
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  @include animate( all, 0.6s );
+}
+
+/*
+  Quotes
+  ------------------------------------------
+*/
+.tr-apoth-home-quote {
+  padding: 50px 0;
+  background-image: $logo-flower-wallpaper-white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 -5px 15px -5px #000, inset 0 5px 15px -5px #000;
+}
+.tr-apoth-home-quote-text {
+  opacity: 0;
+  color: $xochis-white;
+  @include animate( opacity, 0.8s );
+  @include animate( color, 2.6s );
+  text-transform:uppercase;
+  text-shadow: 0px 0px 5px $xochis-orange;
+  font-size: 1.3em;
+  font-weight: 800;
+}
+
+/*
+  Products
+  ------------------------------------------
+*/
+.tr-apoth-home-products {
+  background-image: $logo-flower-wallpaper-black;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+.tr-apoth-home-products p { color: $xochis-white; font-weight: 600; }
+// tabs
+.tr-apoth-home-products-tabs-container {
+  background-color: rgba(0,0,0,0.7);
+  padding: 20px 0;
+  border-radius: 5px;
+  min-height: 80vh;
+  ul { border-color: $xochis-black; }
+  li { width: 16.6%; text-align: center; }
+}
+.tr-apoth-home-products-tabs-container .nav-item a.tr-apoth-home-products-tab {
+  font-family: $standard-text;
+  color: $xochis-black;
+  border-color: $xochis-orange $xochis-orange $xochis-black;
+  background-color: $xochis-white;
+  @include animate( all, 0.4s );
+  &:hover:not(.active), &:focus:not(.active) {
+    border-bottom: none;
+    border-color: $xochis-white;
+    color: $xochis-orange;
+  }
+}
+.tr-apoth-home-products-tabs-container .nav-item a.tr-apoth-home-products-tab.active {
+  background-color: $xochis-black;
+  color: $xochis-orange;
+  font-weight: 600;
+}
+.tr-apoth-home-product-info-box {
+  @extend %tr-apoth-info-box;
+  color: $xochis-white;
+  padding: 50px 0;
+  span { background-color: $xochis-white; color: $xochis-orange; padding: 10px; }
+  h1 { margin-top: 20px; }
+  hr { background-color: $xochis-orange; width: 50px; margin: 0 auto; }
+  p { margin: 20px 50px; font-weight: 400; }
+  button {
+    color: $xochis-white;
+    background-color: $xochis-orange;
+    padding: 5px 35px;
+    &:hover, &:focus { color: $xochis-black; }
+  }
+}
+.tr-apoth-home-product-img-container { padding: 50px 0; }
+.tr-apoth-home-product-img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*
+  Instagram
+  ------------------------------------------
+*/
+.tr-apoth-home-instagram {
+  background-image: $logo-flower-wallpaper-black;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+.tr-apoth-instagram-item {
+  position: relative;
+  display: inline-block;
+  width: calc((100% / 4) - 12px);
+  height: 300px; // TODO: make this dynamic
+  margin: 0px 3px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.tr-apoth-instagram-media { width: 100%; @include animate( all, 0.4s ); }
+.tr-apoth-intagram-overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  opacity: 0;
+  @include animate( all, 0.4s );
+  &:hover, &:focus { opacity: 1; }
+  .tr-apoth-home-instagram-preview-logo {
+    position: absolute;
+    color: $xochis-orange;
+    top: 40%;
+    left: 40%;
+    font-size: 2em;
+    @include animate( all, 0.4s );
+  }
+}
+/*
+  Home Info
+  ------------------------------------------
+*/
+.tr-apoth-home-info{
+  padding: 50px 0;
+  background-image: $logo-flower-wallpaper-white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 5px 15px -5px #000;
+}
+.tr-apoth-home-info-box {
+  @extend %tr-apoth-info-box;
+  span {
+    opacity: 0;
+    position: relative;
+    padding: 50px;
+    background-color: $xochis-black;
+    color: $xochis-orange;
+    @include animate( all, 0.8s );
+    &:before { position: absolute; top: 30%; left: 30%; font-size: 1.5em; }
+  }
+  h1 { text-shadow: 0px 0px 5px $xochis-orange; margin-top: 20px; }
+  p { font-weight: 400; font-size: 1.3em; }
+  a {
+    font-family: $standard-text;
+    display: block;
+    font-size: 1.3em;
+    padding-left: 15px;
+    color: $xochis-black;
+    @include animate ( all, 0.4s );
+    &:hover, &:focus { color: $xochis-orange; }
+  }
+  button {
+    background-color: $xochis-black;
+    color: $xochis-white;
+    padding: 5px 35px;
+    &:hover, &:focus { color: $xochis-orange; }
+  }
+}
+.tr-apoth-home-map {
+  height: 500px;
+  margin-top: 50px;
+  border: 2px $xochis-black solid;
+  box-shadow: 3px 3px 10px $xochis-black;
+  .gm-style-pbc { display: none; } // The 'use cmd + scroll to zoom' overlay
+}
+.tr-apoth-home-map-info-window { p { margin: 0; } }
+/*
+  =================
+    PRODUCTS PAGE
+  =================
+*/
+.tr-apoth-featured-products-carousel { height: 100vh; }
+.tr-apoth-featured-products-carousel .tr-apoth-carousel-dots{ bottom: 5%; }
+.tr-apoth-product-section { padding: 50px 0; }
+.tr-apoth-featured-product-container {
+  h1 { margin: 10px 50px; }
+  hr { margin: 0 50px; background-color: $xochis-orange; }
+  p { font-size: 1.3em;  }
+  p.desc { font-weight: 400; }
+  p.price { color: green; font-weight: 200;}
+  p.ingredients { font-weight: 200; }
+  button { margin: 0 50px; }
+  img { width: 80%; box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); }
+}
+.tr-apoth-product-info-box {
+  @extend %tr-apoth-info-box;
+  color: $xochis-white;
+  padding: 50px 0;
+  span { background-color: $xochis-white; color: $xochis-orange; padding: 10px; }
+  h1 { margin-top: 20px; }
+  hr { background-color: $xochis-orange; width: 50px; margin: 0 auto; }
+  p { margin: 20px 50px; font-weight: 400; font-size: 1.1em; }
+  button {
+    color: $xochis-white;
+    background-color: $xochis-orange;
+    padding: 5px 35px;
+    &:hover, &:focus { color: $xochis-black; }
+  }
+  &.white {
+    color: $xochis-black;
+    span { background-color: $xochis-black; }
+    button {
+      color: $xochis-black;
+      &:hover, &:focus { color: $xochis-white; }
+    }
+  }
+}
+.tr-apoth-products-tea, .tr-apoth-products-body, .tr-apoth-products-jewelry { background: $xochis-black; }
+.tr-apoth-products-gallery {
+  display: none;
+  &.tea, &.body, &.jewelry {
+    color: $xochis-white;
+    background-color: $xochis-black;
+    button { background-color: $xochis-white; color: $xochis-black; }
+  }
+  &.incense, &.syrup, &.sundries {
+    color: $xochis-black;
+    background-color: $xochis-white;
+    button { background-color: $xochis-black; color: $xochis-white; }
+  }
+}
+
+.tr-apoth-individual-product {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  margin-bottom: 30px;
+  img { width: 70%; border-radius: 50%; }
+  h1 { font-family: $featured-text; letter-spacing: .05em; font-weight: 600; margin-top: 20px; }
+  hr { background-color: $xochis-orange; width: 50%; }
+  p { font-family: $standard-text; letter-spacing: .01em; font-weight: 100; font-size: 1.2em; }
+  button { @extend %tr-apoth-btn-link; padding: 5px 35px; &:hover, &:focus {color: $xochis-orange;} }
+}
+.tr-apoth-products-gallery button.tr-apoth-hide-product-gallery {
+  color: $xochis-orange;
+  font-family: $standard-text;
+  background-color: transparent;
+  border: none;
+  @include animate( all, 0.4s );
+  &:hover, &:focus { color: $xochis-white; }
+}
+.tr-apoth-products-gallery.incense,
+.tr-apoth-products-gallery.syrup,
+.tr-apoth-products-gallery.sundries {
+  button.tr-apoth-hide-product-gallery:hover, button.tr-apoth-hide-product-gallery:focus { color: $xochis-black; }
+}
+
+.tr-apoth-product-modal {
+  z-index: 50;
+  display: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+}
+.tr-apoth-product-modal .container {
+  overflow: scroll;
+  height: 80%;
+  position: relative;
+  background-color: $xochis-white;
+  background-image: url(../img/logo-flower-wallpaper-white.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: 120px;
+  padding: 50px 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.5);
+  }
+}
+.tr-apoth-product-modal .container .row { position: relative; }
+.tr-apoth-product-modal .product-modal-image { width: 80%; }
+.tr-apoth-product-modal .modal-info-container {
+  @extend %tr-apoth-info-box;
+  h1 { font-size: $text-l; margin-bottom: 30px; }
+  h2 { font-size: $text-m; margin-top: 20px; font-family: $featured-text; letter-spacing: .05em; font-weight: 600; }
+  hr { background-color: $xochis-orange; width: 80%; }
+  p { font-size: $text-s; font-weight: 400;}
+}
+.tr-apoth-product-modal .close-product-modal {
+  position: absolute;
+  top: -45px;
+  right: 25px;
+  font-size: 1.5em;
+  color: $xochis-black;
+  @include animate( all, 0.4s );
+  &:hover, &:focus { color: $xochis-orange; cursor: pointer; }
+}
+
+
+/*
+  ==============
+    ABOUT PAGE
+  ==============
+*/
+
+.tr-apoth-about-hero{ position: relative; height: 100vh; }
+.tr-apoth-about-hero .row {
+  height: 100%;
+  padding: 50px 0;
+  @include gradient ( 90deg, $xochis-black, 50%, $xochis-white, 50% );
+}
+.tr-apoth-floating-flower {
+  div {
+    height: 8em;
+    width: 8em;
+    background-position: center;
+    background-size: contain;
+    margin: auto;
+  }
+  hr {
+    background-color: $xochis-white;
+    height: 5px;
+    width: 8em;
+    mix-blend-mode: exclusion;
+    margin: auto;
+  }
+}
+.tr-apoth-about-ipa-logo { background-position: center; background-size: 25em; background-repeat: no-repeat; }
+.tr-apoth-about-hero-info-box {
+  h1 {
+    font-family: $featured-text;
+    letter-spacing: .05em;
+    font-weight: 600;
+    color: $xochis-orange;
+  }
+  p {
+    font-family: $standard-text;
+    margin: 20px 40px 20px 0;
+    font-weight: 200;
+    letter-spacing: .01em;
+    font-size: 1.2em;
+    color: $xochis-white;
+    mix-blend-mode: difference;
+  }
+}
+.tr-apoth-about-section .tr-apoth-about-image {
+  opacity: 0;
+  @include animate( all, 0.4s );
+  background-position: center;
+  background-size: cover;
+  padding: 250px 0;
+}
+.tr-apoth-about-section.black { background-color: $xochis-black; }
+.tr-apoth-about-info-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 30px 15px;
+  text-align: left;
+  h1 { font-family: $featured-text; font-size: 2em; letter-spacing: .05em; font-weight: 600; }
+  hr { @include gradient( 90deg, $xochis-orange, 50%, rgba(0,0,0,0), 100% ); margin-left: 0; width: 300px; height: 2px; }
+  p { font-family: $standard-text; margin: 20px 15% 20px 0; font-weight: 400; font-size: 1.1em; letter-spacing: .01em; }
+}
+.tr-apoth-about-section.black .tr-apoth-about-info-box {
+  text-align: right;
+  h1 { color: $xochis-white; }
+  hr { @include gradient( 270deg, $xochis-orange, 50%,rgba(0,0,0,0), 100%); margin-right: 0; margin-left: auto; }
+  p { color: $xochis-white; margin: 20px 0 20px 15%;  }
+}
+.tr-apoth-about-section.black .tr-apoth-about-info-box .left {
+  text-align: left;
+  margin-top: 20px;
+  hr { @include gradient( 90deg, $xochis-orange, 50%, rgba(0,0,0,0), 100% ); margin-left: 0; width: 300px;}
+  p { margin: 20px 15% 20px 0; }
+}
+.tr-apoth-about-map-container { padding: 0; }
+.tr-apoth-about-map-container .tr-apoth-about-map {
+  height: 498px;
+  width: 100%;
+  border-top: 2px $xochis-black solid;
+  .gm-style-pbc { display: none; } // The 'use cmd + scroll to zoom' overlay
+  .tr-apoth-home-map-info-window {
+    p { margin: 0; }
+  }
+}
+/*
+  ================
+    CONTACT PAGE
+  ================
+*/
+.tr-apoth-contact-info-container {
+  padding: 50px 0;
+  background-image: $logo-flower-wallpaper-black;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tr-apoth-contact-info-container .tr-apoth-contact {
+  color: $xochis-white;
+  margin: auto 0;
+  span {
+    position: relative;
+    padding: 45px;
+    background-color: $xochis-white;
+    color: $xochis-orange;
+    border-radius: 50%;
+    border: 2px $xochis-orange solid;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8em;
+    &:before {
+      position: absolute;
+      top: 24%;
+      right: 21%;
+      font-size: 1.8em;
+      margin: 0 auto;
+    }
+  }
+  h1 {
+    font-family: $featured-text;
+    letter-spacing: .05em;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}
+.tr-apoth-contact-info-container .tr-apoth-contact.email a {
+  font-family: $standard-text;
+  font-size: 1.2em;
+  color: $xochis-white;
+  @include animate( all, 0.4s );
+  &:hover, &:focus {color: $xochis-orange;}
+}
+.tr-apoth-contact-info-container .tr-apoth-contact.person {
+  p { font-family: $standard-text; margin: 0 0 10px 0; font-weight: 400; letter-spacing: .01em; font-size: 1.2em; }
+  button {
+    @extend %tr-apoth-btn-link;
+    background-color: $xochis-white;
+    color: $xochis-black;
+    padding: 5px 35px;
+    border: none;
+    &:hover, &:focus { color: $xochis-orange; }
+  }
+}
+
+.tr-apoth-contact-form {
+  padding: 40px 0;
+  width: 100%;
+  margin: 0 auto;
+  h1 {
+    font-family: $featured-text;
+    font-size: $text-xl;
+    letter-spacing: .05em;
+    font-weight: 600;
+    margin-bottom: 50px
+  }
+  button {
+    @extend %tr-apoth-btn-link;
+    background-color: $xochis-black;
+    color: $xochis-white;
+    width: 50%;
+    padding: 5px 25px;
+    &:hover, &:focus {
+      color: $xochis-orange;
+      @include transform( scale(0.95) );
+    }
+    &:disabled {
+      border: 1px $xochis-black solid;
+      background-color: transparent;
+      color: $xochis-black;
+      &:hover, &:focus {
+        cursor:default;
+        @include transform( scale(1) );
+      }
+    }
+  }
+}
+.tr-apoth-contact-form .tr-apoth-form-group {
+  margin-bottom: 40px;
+  .tr-apoth-form-control {
+    border: none;
+    width: 80%;
+    border-bottom: 1px #aaa solid;
+    border-radius: 0;
+    padding: 8px 15px;
+    outline: none;
+    box-shadow: none;
+    &:focus, &:active { box-shadow: none; border-color: $xochis-orange; }
+  }
+  .form-control-msg {
+    display: none;
+    text-transform: uppercase;
+    font-size: .6em;
+  }
+}
+.tr-apoth-contact-form .tr-apoth-submit-msg { margin-top: 10px; }
+.is-invalid .form-control-msg { display: block; }
+
+/*
+  =======
+    404
+  =======
+*/
+.tr-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+  height: 80vh;
+  background-color: $xochis-black;
+  color: $xochis-orange;
+}
+.tr-404 h1 { font-family: $featured-text; letter-spacing: 0.02em; font-size: 4em;  }
+.tr-404 p { font-family: $standard-text; letter-spacing: 0.02em; font-size: 1.5em; }
+
+@import 'responsive';

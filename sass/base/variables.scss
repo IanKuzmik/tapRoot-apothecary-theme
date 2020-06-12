@@ -1,0 +1,40 @@
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+
+/*
+  Colors
+  ------------------------------------------
+*/
+$xochis-orange : rgba( 255, 153, 0, 1.0 );   // #FF9900
+$xochis-black  : rgba( 0, 0, 0, 1.0 );       // #000000
+$xochis-white  : rgba( 255, 255, 255, 1.0 ); // #ffffff
+
+/*
+  Fonts
+  ------------------------------------------
+*/
+$plain-text     : Verdana, Helvetica, sans-serif;
+$standard-text  : 'Alegreya Sans', sans-serif;
+$featured-text  : 'Henny Penny', cursive;
+
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+$text-xs : 12px;
+$text-s  : 16px;
+$text-m  : 26px;
+$text-l  : 36px;
+$text-xl : 48px;
+
+/*
+  Images
+  ------------------------------------------
+*/
+$logo-flower-wallpaper-black            : url('../img/logo-flower-wallpaper-black.png');
+$logo-flower-wallpaper-white            : url('../img/logo-flower-wallpaper-white.png');
+$logo-flower-wallpaper-black-continuous : url('../img/logo-flower-wallpaper-black-continuous.png');

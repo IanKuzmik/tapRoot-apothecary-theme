@@ -1,0 +1,295 @@
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - FOOTER
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =======================
+    SASS - PLACEHOLDERS
+  =======================
+*/
+/*
+  @package tapRoot_apothecary
+  =================
+    SASS - MIXINS
+  =================
+*/
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-footer-etsy-shop-link {
+  border-radius: 12px;
+  font-family: Verdana, Helvetica, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-footer-etsy-shop-link:focus {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  cursor: pointer;
+}
+
+/*
+  @package tapRoot_apothecary
+  =====================
+    SASS - VARIABLES
+  =====================
+*/
+/*
+  Colors
+  ------------------------------------------
+*/
+/*
+  Fonts
+  ------------------------------------------
+*/
+/*
+  Font Sizes
+  ------------------------------------------
+*/
+/*
+  Images
+  ------------------------------------------
+*/
+.tr-apoth-footer {
+  font-family: "Alegreya Sans", sans-serif;
+  border-top: 2px #000 solid;
+  box-shadow: inset 0 15px 15px -15px #000;
+  /*creates a top-only box-shadow */
+  padding-top: 10px;
+  letter-spacing: 0.05em;
+}
+
+.tr-apoth-footer-cat-title {
+  border-left: 5px #ff9900 solid;
+  font-weight: 600;
+  margin-left: 10px;
+  padding-left: 5px;
+  font-size: 26px;
+}
+
+/*
+  Map
+  ------------------------------------------
+*/
+.tr-apoth-navbar-footer-container ul {
+  list-style: none;
+}
+.tr-apoth-navbar-footer-container a {
+  text-decoration: none;
+}
+
+.tr-apoth-navbar-footer-container .current-menu-item .tr-apoth-nav-footer-item {
+  color: black;
+}
+
+.tr-apoth-nav-footer-item {
+  display: block;
+  font-weight: 600;
+  line-height: 2.5em;
+  color: #ff9900;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-nav-footer-item:hover, .tr-apoth-nav-footer-item:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+  Etsy
+  ------------------------------------------
+*/
+.tr-apoth-footer-etsy-item {
+  display: block;
+  line-height: 2.5em;
+}
+
+.tr-apoth-footer-etsy-icon {
+  color: #ff9900;
+  font-size: 1.5em;
+}
+.tr-apoth-footer-etsy-icon:before {
+  display: inline;
+  padding: 5px;
+  border: 2px #ff9900 solid;
+}
+
+.tr-apoth-footer-etsy-link {
+  font-family: "Alegreya Sans", sans-serif;
+  color: black;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-etsy-link:hover, .tr-apoth-footer-etsy-link:focus {
+  color: #ff9900;
+}
+
+.tr-apoth-footer-etsy-hr {
+  background-color: #ff9900;
+  height: 2px;
+  width: 50px;
+}
+
+.tr-apoth-footer-etsy-shop-link {
+  padding: 5px 35px;
+  background-color: black;
+  color: white;
+}
+.tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-footer-etsy-shop-link:focus {
+  color: #ff9900;
+}
+
+/*
+  Contact
+  ------------------------------------------
+*/
+.tr-apoth-footer-logo {
+  width: 100px;
+}
+
+.tr-apoth-footer-contact-hr {
+  background-color: black;
+  height: 2px;
+  width: 100px;
+}
+
+.tr-apoth-footer-contact-address {
+  color: #ff9900;
+}
+
+.tr-apoth-footer-email-link {
+  font-family: "Alegreya Sans", sans-serif;
+  color: black;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-email-link:hover, .tr-apoth-footer-email-link:focus {
+  color: #ff9900;
+}
+
+/*
+  Social
+  ------------------------------------------
+*/
+.tr-apoth-footer-social-container {
+  height: 100%;
+}
+
+.tr-apoth-footer-social-links {
+  position: relative;
+  top: 30%;
+}
+
+.tr-apoth-footer-social-link {
+  font-size: 1.5em;
+  color: #ff9900;
+  padding: 11px 10px;
+  margin: 0 5px;
+  border: 3px #ff9900 solid;
+  border-radius: 50%;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-footer-social-link:before {
+  -webkit-transition: all 0s ease;
+  -moz-transition: all 0s ease;
+  -ms-transition: all 0s ease;
+  -o-transition: all 0s ease;
+  transition: all 0s ease;
+}
+.tr-apoth-footer-social-link:hover, .tr-apoth-footer-social-link:focus {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 3px white solid;
+}
+
+/*
+  Bottom Bar
+  ------------------------------------------
+*/
+.tr-apoth-bottom-bar {
+  background-color: black;
+  color: #ff9900;
+  font-size: 12px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+.tr-apoth-bottom-bar p, .tr-apoth-bottom-bar ul {
+  margin: 0;
+}
+
+.tr-apoth-bottom-bar-nav ul {
+  list-style: none;
+  display: flex;
+  float: right;
+}
+.tr-apoth-bottom-bar-nav ul li:first-child {
+  border-left: 1px #ff9900 solid;
+}
+.tr-apoth-bottom-bar-nav a {
+  text-decoration: none;
+}
+.tr-apoth-bottom-bar-nav span {
+  color: white;
+  border-right: 1px #ff9900 solid;
+  padding: 0 5px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.tr-apoth-bottom-bar-nav span:hover, .tr-apoth-bottom-bar-nav span:focus {
+  color: #ff9900;
+}
+
+/*# sourceMappingURL=footer.css.map */
