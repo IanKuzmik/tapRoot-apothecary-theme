@@ -18,7 +18,7 @@ function tr_apoth_add_headers() {
   $cps .= "style-src 'self' https://fonts.googleapis.com 'unsafe-inline';";
   $cps .= "font-src 'self' https://fonts.gstatic.com;";
   $cps .= "img-src 'self' https://*.googleapis.com https://maps.gstatic.com  *.cdninstagram.com data:;";
-  $cps .= "media-src 'self' *.fbcdn.net;";
+  $cps .= "media-src 'self' *.fbcdn.net *.cdninstagram.com;";
   $cps .= "object-src 'none'";
   header( 'Content-Security-Policy: '.$cps );
 
