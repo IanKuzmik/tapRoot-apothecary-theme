@@ -38,7 +38,7 @@
             <span class="tr-icon-coffee"></span>
             <h1>Tea</h1>
             <hr>
-            <p>We design our handcrafted herbal blends with a  number of factors in mind, from traditional uses of herbs, to medicinal properties, to a complex and thematic flavor profile. Every blend is built for a purpose, be it immune boosting, relaxing and sleepy, or just simply to feature an awesome ingredient or flavor. Most importantly, we strive for each blend to be perfectly unique, so that every tea you have from us is unlike any you’ve had before</p>
+            <p>We design our handcrafted tea and herbal blends with a number of factors in mind, from traditional uses of herbs, to medicinal properties, to a complex and thematic flavor profile. Every blend is built for a purpose, be it immune boosting, relaxing and sleepy, or just simply to feature an awesome ingredient or flavor. Most importantly, we strive for each blend to be perfectly unique, so that every tea you have from us is unlike any you’ve had before</p>
             <?php if ( !empty( get_product_gallery( 'tea' ) ) ): ?>
               <button id="tea" class="view-products-button">View Tea</button>
             <?php else: ?>
@@ -74,7 +74,7 @@
             <span class="tr-icon-fire-2"></span>
             <h1>Incense</h1>
             <hr>
-            <p>Our all natural, hand-rolled incense contains no volatile oils or fake colors. We start by grinding up real herbs, resins, and barks into a fine powder. Then we soak our bamboo sticks in a hot honey solution and roll them through. After they’ve gotten a few coats, they go onto a sheet pan, we crust them with extra herbs, and bake them for 3-4 hours. The result is a clean incense with scent that comes from its actual material, and not just the oil it was soaked in.</p>
+            <p>Our all natural, hand-rolled incense contains no volatile oils or fake colors. We start by grinding up real herbs, resins, and barks into a fine powder. Then we soak our bamboo sticks in a hot honey solution and roll them through. After they’ve gotten a few coats, they go onto a sheet pan, we crust them with extra herbs, and bake them for 3-4 hours. The result is a clean incense with scent that comes from its actual material, and not just the oil it was soaked in.<br><br>We're now selling loose Incense Powder as well! Everything the same, just not on a stick.</p>
             <?php if ( !empty( get_product_gallery( 'incense' ) ) ): ?>
               <button id="incense" class="view-products-button">View Incense</button>
             <?php else: ?>

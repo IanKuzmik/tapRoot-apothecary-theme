@@ -1004,6 +1004,10 @@ a:focus, button:focus {
   padding: 50px 0;
 }
 
+.tr-apoth-product-intro-text {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .tr-apoth-home-products p {
   color: white;
   font-weight: 600;
@@ -1455,6 +1459,9 @@ a:focus, button:focus {
   width: 80%;
 }
 
+.tr-apoth-product-modal .modal-info-container {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .tr-apoth-product-modal .modal-info-container h1 {
   font-size: 36px;
   margin-bottom: 30px;

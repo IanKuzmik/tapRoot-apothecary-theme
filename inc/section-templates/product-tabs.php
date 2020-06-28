@@ -68,7 +68,7 @@
               <span class="tr-icon-fire-2"></span>
               <h1>Incense</h1>
               <hr>
-              <p>Our all natural, hand-rolled incense contains no volatile oils or fake colors. We start by grinding up real herbs, resins, and barks into a fine powder. Then we soak our bamboo sticks in a hot honey solution and roll them through. After they’ve gotten a few coats, they go onto a sheet pan, we crust them with extra herbs, and bake them for 3-4 hours. The result is a clean incense with scent that comes from its actual material, and not just the oil it was soaked in.</p>
+              <p>Our all natural, hand-rolled incense contains no volatile oils or fake colors. We start by grinding up real herbs, resins, and barks into a fine powder. Then we soak our bamboo sticks in a hot honey solution and roll them through. After they’ve gotten a few coats, they go onto a sheet pan, we crust them with extra herbs, and bake them for 3-4 hours. The result is a clean incense with scent that comes from its actual material, and not just the oil it was soaked in.<br><br>We're now selling loose Incense Powder as well! Everything the same, just not on a stick.</p>
               <?php if ( !empty( get_product_gallery( 'incense' ) ) ): ?>
                 <a href="products/#incense-anchor"><button href="#">View Incense</button></a>
               <?php endif; ?>

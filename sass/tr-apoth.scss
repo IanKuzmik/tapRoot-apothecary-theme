@@ -150,6 +150,7 @@ a:focus, button:focus { outline: none; border: none; text-decoration: none; }
   background-attachment: fixed;
   padding: 50px 0;
 }
+.tr-apoth-product-intro-text { background-color: rgba(0,0,0,0.5); }
 .tr-apoth-home-products p { color: $xochis-white; font-weight: 600; }
 // tabs
 .tr-apoth-home-products-tabs-container {
@@ -412,6 +413,7 @@ a:focus, button:focus { outline: none; border: none; text-decoration: none; }
 .tr-apoth-product-modal .product-modal-image { width: 80%; }
 .tr-apoth-product-modal .modal-info-container {
   @extend %tr-apoth-info-box;
+  background-color: rgba(255,255,255,0.5);
   h1 { font-size: $text-l; margin-bottom: 30px; }
   h2 { font-size: $text-m; margin-top: 20px; font-family: $featured-text; letter-spacing: .05em; font-weight: 600; }
   hr { background-color: $xochis-orange; width: 80%; }
