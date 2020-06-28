@@ -13,6 +13,7 @@
   font-family: $plain-text;
   font-weight: 600;
   letter-spacing: 0.05em;
+  border: none;
   @include animate( all, 0.4s );
   &:hover, &:focus {
     @include transform( scale(0.9) );

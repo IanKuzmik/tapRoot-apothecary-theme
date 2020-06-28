@@ -12,13 +12,13 @@
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
 
-    <div class="container-fluid tr-apoth-products-featured">
+    <!-- <div class="container-fluid tr-apoth-products-featured">
       <div class="row">
         <div class="col-12">
-          <?php include( 'inc/section-templates/featured-products-carousel.php' ); ?>
+          <?php //include( 'inc/section-templates/featured-products-carousel.php' ); ?>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <a name="tea-anchor"></a>
     <div class="container-fluid tr-apoth-products-tea tr-apoth-product-section">
