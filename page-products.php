@@ -40,7 +40,9 @@
             <hr>
             <p>We design our handcrafted herbal blends with a  number of factors in mind, from traditional uses of herbs, to medicinal properties, to a complex and thematic flavor profile. Every blend is built for a purpose, be it immune boosting, relaxing and sleepy, or just simply to feature an awesome ingredient or flavor. Most importantly, we strive for each blend to be perfectly unique, so that every tea you have from us is unlike any you’ve had before</p>
             <?php if ( !empty( get_product_gallery( 'tea' ) ) ): ?>
-              <button id="tea" class="view-products-button" href="#">View Tea</button>
+              <button id="tea" class="view-products-button">View Tea</button>
+            <?php else: ?>
+              <button class="product-not-available">Check Back Later!</button>
             <?php endif; ?>
           </div>
         </div>
@@ -74,7 +76,9 @@
             <hr>
             <p>Our all natural, hand-rolled incense contains no volatile oils or fake colors. We start by grinding up real herbs, resins, and barks into a fine powder. Then we soak our bamboo sticks in a hot honey solution and roll them through. After they’ve gotten a few coats, they go onto a sheet pan, we crust them with extra herbs, and bake them for 3-4 hours. The result is a clean incense with scent that comes from its actual material, and not just the oil it was soaked in.</p>
             <?php if ( !empty( get_product_gallery( 'incense' ) ) ): ?>
-              <button id="incense" class="view-products-button" href="#">View Incense</button>
+              <button id="incense" class="view-products-button">View Incense</button>
+            <?php else: ?>
+              <button class="product-not-available">Check Back Later!</button>
             <?php endif; ?>
           </div>
         </div>
@@ -108,7 +112,9 @@
             <hr>
             <p>Our Salves and Creams are made with our own cold-pressed herbal oils. This process can take anywhere from 3 months to a year, but the result is a potent product built to tackle the cold, dry winters of Montana.<br><br>We also enjoy indulging in seasonal Bath Salts and Clay Masks for those ever necessary ‘spa days’. As a wise man once told me his mama told him, “treat yourself, don’t cheat yourself”</p>
             <?php if ( !empty( get_product_gallery( 'body' ) ) ): ?>
-              <button id="body" class="view-products-button" href="#">View Body Products</button>
+              <button id="body" class="view-products-button">View Body Products</button>
+            <?php else: ?>
+              <button class="product-not-available">Check Back Later!</button>
             <?php endif; ?>
           </div>
         </div>
@@ -142,7 +148,9 @@
             <hr>
             <p>We simmer Herbs, Berries, and Spices with fresh, local Honey for a minimum of three days before straining and canning our syrup, no added sugars, colors, or preservatives. These syrup are a wonderful way to weave herbals into your life, be it a spoonful at night, or as an ingredient for baking or cocktails, and even perfect for pancakes!<br><br>Right now, our Syrups are seasonal specialty items and extremely small batch. We make a Wild Elderberry Syrup every Fall; come grab some at the farmers market, we sell out quickly!</p>
             <?php if ( !empty( get_product_gallery( 'syrup' ) ) ): ?>
-              <button id="syrup" class="view-products-button" href="#">View Syrup</button>
+              <button id="syrup" class="view-products-button">View Syrup</button>
+            <?php else: ?>
+              <button class="product-not-available">Check Back Later!</button>
             <?php endif; ?>
           </div>
         </div>
@@ -176,7 +184,9 @@
             <hr>
             <p>Herbal charms to keep your spirit happy and your style fly. Because we make them with repurposed, vintage chains and stones, each pair is unique by virtue, and features different wild-foraged and farm-sourced herbs and flowers</p>
             <?php if ( !empty( get_product_gallery( 'jewelry' ) ) ): ?>
-              <button id="jewelry" class="view-products-button" href="#">View Jewelry</button>
+              <button id="jewelry" class="view-products-button">View Jewelry</button>
+            <?php else: ?>
+              <button class="product-not-available">Check Back Later!</button>
             <?php endif; ?>
           </div>
         </div>
@@ -210,7 +220,9 @@
             <hr>
             <p>Miscellaneous gris-gris and such to keep the good vibes flowing, because you can never have too many herbs in your life</p>
             <?php if ( !empty( get_product_gallery( 'sundries' ) ) ): ?>
-              <button id="sundries" class="view-products-button" href="#">View Sundries</button>
+              <button id="sundries" class="view-products-button">View Sundries</button>
+            <?php else: ?>
+              <button class="product-not-available">Check Back Later!</button>
             <?php endif; ?>
           </div>
         </div>
@@ -238,6 +250,7 @@
               <p id="description"></p>
               <p id="ingredients"></p>
               <p id="instructions"></p>
+              <a href="#" target="_blank"><button>Buy On Etsy</button></a>
             </div>
           </div>
           <span class="tr-icon-cancel-1 close-product-modal"></span>

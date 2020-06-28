@@ -126,6 +126,7 @@ jQuery(document).ready(function($) {
     $modal.find('p#description').html(json.description);
     $modal.find('p#ingredients').html(json.ingredients);
     $modal.find('p#instructions').html(json.instructions);
+    $modal.find('a').attr( 'href', json.etsy_link );
     $modal.fadeIn(400);
   });
   $('.close-product-modal').on( 'click', function() {

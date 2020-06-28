@@ -192,6 +192,7 @@ function get_product_gallery( $type ) {
         'instructions'   => get_field('instructions'),
         'vibe'           => get_field('vibe'),
         'featured_image' => get_field('featured_image'),
+        'etsy_link'      => get_field('etsy_link'),
         'gallery'        => get_field('gallery')
       ];
       // prepare json for html data attr
@@ -205,7 +206,7 @@ function get_product_gallery( $type ) {
     if ($type == 'tea' OR $type == 'body') {
       $output .= '<button id="'.str_replace( ' ', '-', strtolower(get_field('name')) ).'" class="tr-apoth-open-product-modal" href="#">View</button>';
     } else {
-      $output .= '<button id="'.str_replace( ' ', '-', strtolower(get_field('name')) ).'" class="" href="#">Buy on Etsy</button>';
+      $output .= '<a href="'.get_field('etsy_link').'" target="_blank"><button id="'.str_replace( ' ', '-', strtolower(get_field('name')) ).'">Buy on Etsy</button></a>';
     }
     $output .= '</div>';
   }

@@ -333,6 +333,7 @@ a:focus, button:focus { outline: none; border: none; text-decoration: none; }
     }
   }
 }
+.tr-apoth-product-info-box button.product-not-available { &:hover,&:focus{ transform: none; cursor: inherit; color: unset; } }
 .tr-apoth-products-tea, .tr-apoth-products-body, .tr-apoth-products-jewelry { background: $xochis-black; }
 .tr-apoth-products-gallery {
   display: none;
@@ -415,6 +416,7 @@ a:focus, button:focus { outline: none; border: none; text-decoration: none; }
   h2 { font-size: $text-m; margin-top: 20px; font-family: $featured-text; letter-spacing: .05em; font-weight: 600; }
   hr { background-color: $xochis-orange; width: 80%; }
   p { font-size: $text-s; font-weight: 400;}
+  button { @extend %tr-apoth-btn-link; padding: 5px 35px; background-color: $xochis-black; color: $xochis-white; &:hover, &:focus {color: $xochis-orange;} }
 }
 .tr-apoth-product-modal .close-product-modal {
   position: absolute;
