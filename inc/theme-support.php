@@ -7,30 +7,6 @@
 */
 
 /*
-  HTTP Headers
-  --------------------------------
-*/
-function tr_apoth_add_headers() {
-  $cps  = "";
-  $cps .= "frame-ancestors 'self';";
-  $cps .= "default-src 'self';";
-  $cps .= "script-src 'self' https://maps.googleapis.com 'unsafe-inline';";
-  $cps .= "style-src 'self' https://fonts.googleapis.com 'unsafe-inline';";
-  $cps .= "font-src 'self' https://fonts.gstatic.com;";
-  $cps .= "img-src 'self' https://*.googleapis.com https://maps.gstatic.com  *.cdninstagram.com data:;";
-  $cps .= "media-src 'self' *.fbcdn.net *.cdninstagram.com;";
-  $cps .= "object-src 'none'";
-  header( 'Content-Security-Policy: '.$cps );
-
-	header( 'X-Content-Type-Options: nosniff' );
-	header( 'Referrer-Policy: strict-origin-when-cross-origin' );
-	header( 'Strict-Transport-Security: max-age=31540000; includeSubDomains' );
-	header( 'Timing-Allow-Origin: *' );
-	header_remove('Expires');
-}
-add_action( 'send_headers', 'tr_apoth_add_headers' );
-
-/*
   Navigation Menus
   --------------------------------
 */
