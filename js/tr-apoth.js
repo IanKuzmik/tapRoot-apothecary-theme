@@ -121,6 +121,7 @@ jQuery(document).ready(function($) {
     $modal = $('.tr-apoth-product-modal');
     console.log(json);
     $modal.find('img').attr( 'src', json.featured_image );
+    $modal.find('img').attr( 'alt', json.image_alt );
     $modal.find('h1').html(json.name);
     $modal.find('h2').html(json.tagline);
     $modal.find('p#description').html(json.description);

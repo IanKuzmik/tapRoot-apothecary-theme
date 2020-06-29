@@ -167,7 +167,8 @@ function get_product_gallery( $type ) {
         'ingredients'    => get_field('ingredients'),
         'instructions'   => get_field('instructions'),
         'vibe'           => get_field('vibe'),
-        'featured_image' => get_field('featured_image'),
+        'featured_image' => get_field('featured_image')['url'],
+        'image_alt'      => get_field('featured_image')['alt'],
         'etsy_link'      => get_field('etsy_link'),
         'gallery'        => get_field('gallery')
       ];
