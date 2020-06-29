@@ -456,10 +456,11 @@ a:focus, button:focus { outline: none; border: none; text-decoration: none; }
     height: 5px;
     width: 8em;
     mix-blend-mode: exclusion;
-    margin: auto;
+    margin: auto; 
   }
 }
-.tr-apoth-about-ipa-logo { background-position: center; background-size: 25em; background-repeat: no-repeat; }
+.tr-apoth-floating-flower-img { background-image: url('../img/logo-split-grayscale.png'); }
+.tr-apoth-about-ipa-logo { background-image: url('../img/ipa-text-img.png'); background-position: center; background-size: 25em; background-repeat: no-repeat; }
 .tr-apoth-about-hero-info-box {
   h1 {
     font-family: $featured-text;

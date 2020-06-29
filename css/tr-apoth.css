@@ -306,6 +306,9 @@
   opacity: 0.5;
   cursor: pointer;
 }
+.tr-apoth-header-logo.white {
+  display: none;
+}
 
 /*
   Nav
@@ -387,6 +390,7 @@
 
 .tr-apoth-mobile-menu {
   padding: 0;
+  display: none;
 }
 
 .tr-apoth-mobile-menu.sticky {
@@ -1540,7 +1544,12 @@ a:focus, button:focus {
   margin: auto;
 }
 
+.tr-apoth-floating-flower-img {
+  background-image: url("../img/logo-split-grayscale.png");
+}
+
 .tr-apoth-about-ipa-logo {
+  background-image: url("../img/ipa-text-img.png");
   background-position: center;
   background-size: 25em;
   background-repeat: no-repeat;

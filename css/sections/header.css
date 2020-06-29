@@ -134,6 +134,9 @@
   opacity: 0.5;
   cursor: pointer;
 }
+.tr-apoth-header-logo.white {
+  display: none;
+}
 
 /*
   Nav
@@ -215,6 +218,7 @@
 
 .tr-apoth-mobile-menu {
   padding: 0;
+  display: none;
 }
 
 .tr-apoth-mobile-menu.sticky {

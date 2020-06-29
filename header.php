@@ -32,7 +32,7 @@
             <div class="tr-apoth-logo-container">
               <a href="<?php echo get_home_url(); ?>">
                 <img class="tr-apoth-header-logo black" src="<?php echo get_template_directory_uri().'/img/xoch-logo.png'; ?>" alt="Xochis">
-                <img class="tr-apoth-header-logo white" src="<?php echo get_template_directory_uri().'/img/xoch-logo-white.png'; ?>" alt="Xochis" style="display:none;">
+                <img class="tr-apoth-header-logo white" src="<?php echo get_template_directory_uri().'/img/xoch-logo-white.png'; ?>" alt="Xochis">
               </a>
             </div>
           </div>
@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <div class="contanier-fluid tr-apoth-mobile-menu" style="display:none;">
+      <div class="contanier-fluid tr-apoth-mobile-menu">
         <div class="row">
           <div class="col-12">
             <div class="tr-apoth-mobile-navbar-container m-auto">

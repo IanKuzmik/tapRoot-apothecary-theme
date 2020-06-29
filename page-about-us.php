@@ -14,10 +14,9 @@
 
     <div class="container-fluid tr-apoth-about-hero">
       <div class="row">
-        <div class="col-5 tr-apoth-about-ipa-logo" style="background-image:url(<?php echo $_SERVER['PHP_SELF'].'/wp-content/themes/tap-root-apothecary/img/ipa-text-img.png'; ?>)">
-        </div>
+        <div class="col-5 tr-apoth-about-ipa-logo"></div>
         <div class="col-2 tr-apoth-floating-flower">
-          <div style="background-image:url(<?php echo $_SERVER['PHP_SELF'].'/wp-content/themes/tap-root-apothecary/img/logo-split-grayscale.png'; ?>)"></div>
+          <div class="tr-apoth-floating-flower-img"></div>
           <hr>
         </div>
         <div class="col-12 col-lg-5 text-center my-auto tr-apoth-about-hero-info-box">

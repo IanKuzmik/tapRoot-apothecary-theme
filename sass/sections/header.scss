@@ -40,6 +40,7 @@
   margin-left: 15px;
   @include animate( all, 0.4s );
   &:hover, &:focus { opacity: 0.5; cursor: pointer; }
+  &.white { display: none; }
 }
 
 /*
@@ -92,7 +93,7 @@
 .tr-apoth-header.black .tr-apoth-nav-toggle-icon:hover, .tr-apoth-header.black .tr-apoth-nav-toggle-icon:focus { color: $xochis-white; }
 .tr-apoth-nav-toggle-icon::before { vertical-align: middle; }
 
-.tr-apoth-mobile-menu { padding: 0; }
+.tr-apoth-mobile-menu { padding: 0; display: none; }
 .tr-apoth-mobile-menu.sticky { margin-top: -30px; }
 
 .tr-apoth-mobile-navbar-container { display: block; background-color: rgba(0, 0, 0, 0.9); text-align: center; }
