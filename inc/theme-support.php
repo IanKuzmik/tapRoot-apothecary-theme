@@ -199,7 +199,7 @@ function get_product_gallery( $type ) {
       $json = rawurlencode( json_encode($json) );
     }
     $output .= '<div class="tr-apoth-individual-product" data-json="'.(isset($json) ? $json : '').'">'; // Save modal information
-    $output .= '<img src="'.get_field('featured_image').'" alt="'.get_field('name').'">';
+    $output .= '<img src="'.get_field('featured_image')['url'].'" alt="'.get_field('featured_image')['alt'].'">';
     $output .= '<h1>'.get_field('name').'</h1>';
     $output .= '<hr>';
     $output .= '<p>'.( ($type == 'tea' OR $type == 'body') ? get_field('tagline') : get_field('ingredients') ).'</p>';
