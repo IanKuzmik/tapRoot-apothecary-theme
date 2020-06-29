@@ -30,9 +30,9 @@
               <span class="tr-apoth-footer-cat-title">Find Us on Etsy</span>
               <div class="tr-apoth-footer-etsy-container text-center">
                 <span class="tr-apoth-footer-etsy-item tr-apoth-footer-etsy-icon tr-icon-etsy"></span>
-                <a class="tr-apoth-footer-etsy-item tr-apoth-footer-etsy-link" href="https://www.etsy.com/shop/XochisApothecary">etsy.com/shop/XochisApothecary</a>
+                <a class="tr-apoth-footer-etsy-item tr-apoth-footer-etsy-link" href="https://www.etsy.com/shop/XochisApothecary" target="_blank">etsy.com/shop/XochisApothecary</a>
                 <hr class="tr-apoth-footer-etsy-item tr-apoth-footer-etsy-hr">
-                <a href="https://www.etsy.com/shop/XochisApothecary"><button class="tr-apoth-footer-etsy-item tr-apoth-footer-etsy-shop-link mx-auto">Shop</button></a>
+                <a href="https://www.etsy.com/shop/XochisApothecary" target="_blank"><button class="tr-apoth-footer-etsy-item tr-apoth-footer-etsy-shop-link mx-auto">Shop</button></a>
               </div>
           </div>
 
@@ -42,7 +42,7 @@
               <img class="tr-apoth-footer-logo" src="<?php echo get_template_directory_uri().'/img/xoch-logo.png'; ?>" alt="Xochis">
               <hr class="tr-apoth-footer-contact-hr">
               <p class="tr-apoth-footer-contact-address">Red Lodge, MT 59068</p>
-              <a class="tr-apoth-footer-email-link" href="mailto:xochis.apothecary@gmail.com">xochis.apothecary@gmail.com</a>
+              <a class="tr-apoth-footer-email-link" href="mailto:xochis.apothecary@gmail.com" target="_blank">xochis.apothecary@gmail.com</a>
             </div>
           </div>
 
