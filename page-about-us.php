@@ -95,12 +95,12 @@
       <div class="row">
         <div class="col-12 col-lg-6 order-lg-2 tr-apoth-about-info-box">
           <div class="">
-            <h1>Indoor Markets in Red Lodge</h1>
+            <h1>Find us in Red Lodge, MT</h1>
             <hr>
-            <p>Indoor markets in Red Lodge don’t happen all the time, but they’re a lot of fun! Our next one will be some time in the Spring at the Red Lodge Senior Center.</p>
+            <p>Every Friday evening from 3:30-6:00, we set up with a great group of vendors at Lion's Park in our hometown of Red Lodge.</p>
           </div>
           <div class="left">
-            <h1 class="left" >Find us at the Cody, Wyoming Farmers Market</h1>
+            <h1 class="left" >Find us in Cody, WY</h1>
             <hr class="left">
             <p class="left" >Barring a not-so-infrequent snowstorm, we drive down to Cody, WY every Saturday for the Farmers Market. In the summer, find us in the parking lot at 13th & Beck. In the winter, we’ll be in a building right across the street!</p>
           </div>
