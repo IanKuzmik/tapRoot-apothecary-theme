@@ -11,7 +11,7 @@
       <div class="container-fluid">
         <div class="row">
 
-          <div class="col-6 col-md-2 mt-3 mt-md-0">
+          <div class="col-12 col-sm-6 col-md-2 mt-3 mt-md-0">
             <nav class="tr-apoth-navbar-footer-nav">
               <span class="tr-apoth-footer-cat-title">Map</span>
               <div class="tr-apoth-navbar-footer-container">
@@ -26,7 +26,7 @@
             </nav>
           </div>
 
-          <div class="col-6 col-md-4 mt-3 mt-md-0">
+          <div class="col-12 col-sm-6 col-md-4 mt-3 mt-md-0">
               <span class="tr-apoth-footer-cat-title">Find Us on Etsy</span>
               <div class="tr-apoth-footer-etsy-container text-center">
                 <span class="tr-apoth-footer-etsy-item tr-apoth-footer-etsy-icon tr-icon-etsy"></span>
@@ -36,7 +36,7 @@
               </div>
           </div>
 
-          <div class="col-6 col-md-3 mt-3 mt-md-0">
+          <div class="col-12 col-sm-6 col-md-3 mt-3 mt-md-0">
             <span class="tr-apoth-footer-cat-title">Contact</span>
             <div class="tr-apoth-footer-contact-container text-center">
               <img class="tr-apoth-footer-logo" src="<?php echo get_template_directory_uri().'/img/xoch-logo.png'; ?>" alt="Xochis">
@@ -46,7 +46,7 @@
             </div>
           </div>
 
-          <div class="col-6 col-md-3 mt-3 mt-md-0">
+          <div class="col-12 col-sm-6 col-md-3 mt-3 mt-md-0">
             <span class="tr-apoth-footer-cat-title">Follow Us</span>
             <div class="tr-apoth-footer-social-container text-center">
               <div class="tr-apoth-footer-social-links my-auto">

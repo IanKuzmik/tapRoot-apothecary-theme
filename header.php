@@ -38,7 +38,7 @@
             </div>
           </div>
 
-          <div class="col-4 col-md-2 col-lg-6 my-auto">
+          <div class="col-12 col-sm-4 col-md-2 col-lg-6 my-auto">
             <nav class="tr-apoth-navbar">
               <span class="tr-icon-menu-1 tr-apoth-nav-toggle-icon js-navMenuToggle"></span>
               <div class="tr-apoth-navbar-container m-auto">
@@ -53,7 +53,7 @@
             </nav>
           </div>
 
-          <div class="col-8 col-md-6 col-lg-4 my-auto">
+          <div class="col-12 col-sm-8 col-md-6 col-lg-4 my-auto">
             <div class="tr-apoth-header-external-links">
               <a class="tr-apoth-external-link tr-apoth-etsy-external-link" href="https://www.etsy.com/shop/XochisApothecary" target="_blank">Shop Our Etsy</a>
               <a class="tr-apoth-external-link tr-icon-facebook" href="https://www.facebook.com/xochis.apothecary/" target="_blank"></a>
