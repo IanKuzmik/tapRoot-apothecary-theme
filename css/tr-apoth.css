@@ -282,11 +282,11 @@
 }
 
 .tr-apoth-header.sticky.hide {
-  -webkit-transform: translateY(-100px);
-  -moz-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
-  -o-transform: translateY(-100px);
-  transform: translateY(-100px);
+  -webkit-transform: translateY(-130px);
+  -moz-transform: translateY(-130px);
+  -ms-transform: translateY(-130px);
+  -o-transform: translateY(-130px);
+  transform: translateY(-130px);
 }
 
 /*
@@ -2031,13 +2031,16 @@ a:focus, button:focus {
     font-weight: 400;
   }
 
-  #main div.tr-apoth-about-section .tr-apoth-about-info-box {
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box,
+#main div.tr-apoth-about-section .tr-apoth-about-info-box .left {
     text-align: center;
   }
-  #main div.tr-apoth-about-section .tr-apoth-about-info-box p {
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box p,
+#main div.tr-apoth-about-section .tr-apoth-about-info-box .left p {
     margin: 20px 0;
   }
-  #main div.tr-apoth-about-section .tr-apoth-about-info-box hr {
+  #main div.tr-apoth-about-section .tr-apoth-about-info-box hr,
+#main div.tr-apoth-about-section .tr-apoth-about-info-box .left hr {
     margin: auto;
     background: -moz-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
     background: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #ff9900 50%, rgba(0, 0, 0, 0) 100%);
@@ -2132,6 +2135,10 @@ a:focus, button:focus {
     top: 130px;
   }
 
+  .tr-apoth-product-modal .product-modal-image {
+    margin-bottom: 20px;
+  }
+
   .tr-apoth-footer-social-link {
     padding: 11px 10px;
   }
@@ -2155,6 +2162,10 @@ a:focus, button:focus {
   }
 }
 @media only screen and (max-width: 576px) {
+  h1 {
+    letter-spacing: 0.08em;
+  }
+
   .tr-apoth-header {
     height: 150px;
   }

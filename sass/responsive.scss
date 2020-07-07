@@ -34,7 +34,8 @@
 	.tr-apoth-about-hero-info-box {
 		p { margin: 20px 40px; font-weight: 400; }
 	}
-	#main div.tr-apoth-about-section .tr-apoth-about-info-box {
+	#main div.tr-apoth-about-section .tr-apoth-about-info-box,
+	#main div.tr-apoth-about-section .tr-apoth-about-info-box .left {
     text-align: center;
     p { margin: 20px 0; }
     hr { margin: auto; @include double-gradient ( 270deg, rgba(0, 0, 0, 0), 0%, #ff9900, 50%, rgba(0, 0, 0, 0), 100% ); }
@@ -70,6 +71,7 @@
 		img { width: 200px; height: 200px; }
 	}
 	.tr-apoth-product-modal .close-product-modal { right: 15%; position: fixed; top: 130px; }
+	.tr-apoth-product-modal .product-modal-image { margin-bottom: 20px; }
 	.tr-apoth-footer-social-link { padding: 11px 10px; }
 	.tr-apoth-contact.person span {	margin-top: 30px; }
 }
@@ -83,6 +85,7 @@
 }
 
 @media only screen and (max-width: 576px) {
+	h1 { letter-spacing: 0.08em; }
 	.tr-apoth-header { height: 150px; }
 	.tr-apoth-header.sticky { height: 120px; }
 	.tr-apoth-logo-container { text-align: center; }

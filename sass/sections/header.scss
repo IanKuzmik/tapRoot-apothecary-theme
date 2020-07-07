@@ -29,7 +29,7 @@
 
 .tr-apoth-header-container { @include animate( all, 0.4s ); }
 .tr-apoth-header.sticky .tr-apoth-header-container { @include transformX2( scale(0.8), translateY(-25px) ); }
-.tr-apoth-header.sticky.hide { @include transform( translateY(-100px) ); }
+.tr-apoth-header.sticky.hide { @include transform( translateY(-130px) ); }
 
 /*
   Logo
