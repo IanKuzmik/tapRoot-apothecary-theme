@@ -232,10 +232,6 @@
   .tr-apoth-product-img-container br {
     display: block;
   }
-  .tr-apoth-product-img-container img {
-    width: 200px;
-    height: 200px;
-  }
 
   .tr-apoth-product-modal .close-product-modal {
     right: 15%;

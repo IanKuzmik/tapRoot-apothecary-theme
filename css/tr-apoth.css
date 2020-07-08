@@ -407,6 +407,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  padding: 0;
 }
 
 .tr-apoth-mobile-navbar-container ul li {
@@ -2123,10 +2124,6 @@ a:focus, button:focus {
 
   .tr-apoth-product-img-container br {
     display: block;
-  }
-  .tr-apoth-product-img-container img {
-    width: 200px;
-    height: 200px;
   }
 
   .tr-apoth-product-modal .close-product-modal {
