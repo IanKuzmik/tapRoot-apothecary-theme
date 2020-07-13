@@ -6,7 +6,7 @@
 */
 
 // set custom map map type
-var customMapType = [
+const customMapType = [
   {
     featureType : 'all',
     elementType : 'labels',
@@ -108,13 +108,15 @@ function xochisGoogleMapInitHome() {
 
 function xochisGoogleMapInitAbout() {
   // set location
-  let location = { lat: 44.524794, lng: -109.060961 };
+  let locationCody = { lat: 44.524794, lng: -109.060961 };
+  let locationRedLodge = { lat: 45.190680, lng: -109.248072 }; 
+  let locationBillings = { lat: 45.740848, lng: -108.597084 };
   // set custom map map type
   let xochisMapType = new google.maps.StyledMapType( customMapType, { name: 'Xochis' } );
   // init map
   let map = new google.maps.Map( document.getElementById('tr-apoth-about-map'), {
     zoom                  : 7,
-    center                : location,
+    center                : { lat: 45, lng: -109 },
     mapTypeControlOptions : { mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'xochis_map'] },
     mapTypeId             : 'xochis_map'
   });
@@ -125,15 +127,19 @@ function xochisGoogleMapInitAbout() {
     url        : window.location.origin + '/wp-content/themes/tap-root-apothecary/img/xochis-map-marker.png',
     scaledSize : new google.maps.Size(57, 50)
   };
+  mapMarker( locationCody, map, customMarkerIcon, '<span class="tr-apoth-about-map-info-window text-center"><p>Cody Farmers Market</p><p>13th & Beck</p></span>' );
+  mapMarker( locationRedLodge, map, customMarkerIcon, '<span class="tr-apoth-about-map-info-window text-center"><p>Red Lodge Farmers Market</p><p>Lions Park</p></span>' );
+  mapMarker( locationBillings, map, customMarkerIcon, '<span class="tr-apoth-about-map-info-window text-center"><p>Billings Mini Market</p><p>3201 Hesper Road</p></span>' );
+}
+
+function mapMarker( location, map, icon, contentString) {
   // init marker
   let marker = new google.maps.Marker({
     position  : location,
     map       : map,
     animation : google.maps.Animation.DROP,
-    icon      : customMarkerIcon,
+    icon      : icon,
   });
-  // set info window content
-  let contentString = '<span class="tr-apoth-about-map-info-window text-center"><p>Cody Farmers Market</p><p>13th & Beck </br>Every Saturday: 10am - 1pm</p></span>';
   // create info window
   let infoWindow = new google.maps.InfoWindow({
   content: contentString,

@@ -501,13 +501,14 @@ a:focus, button:focus { outline: none; border: none; text-decoration: none; }
   h1 { color: $xochis-white; }
   hr { @include gradient( 270deg, $xochis-orange, 50%,rgba(0,0,0,0), 100%); margin-right: 0; margin-left: auto; }
   p { color: $xochis-white; margin: 20px 0 20px 15%;  }
+  a { font-weight: 600; color: $xochis-white; @include animate( all, 0.4s ); &:hover, &:focus { color: $xochis-orange } }
 }
-.tr-apoth-about-section.black .tr-apoth-about-info-box .left {
-  text-align: left;
-  margin-top: 20px;
-  hr { @include gradient( 90deg, $xochis-orange, 50%, rgba(0,0,0,0), 100% ); margin-left: 0; width: 300px;}
-  p { margin: 20px 15% 20px 0; }
-}
+// .tr-apoth-about-section.black .tr-apoth-about-info-box .left {
+//   text-align: left;
+//   margin-top: 20px;
+//   hr { @include gradient( 90deg, $xochis-orange, 50%, rgba(0,0,0,0), 100% ); margin-left: 0; width: 300px;}
+//   p { margin: 20px 15% 20px 0; }
+// }
 .tr-apoth-about-map-container { padding: 0; }
 .tr-apoth-about-map-container .tr-apoth-about-map {
   height: 498px;

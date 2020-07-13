@@ -34,8 +34,7 @@
 	.tr-apoth-about-hero-info-box {
 		p { margin: 20px 40px; font-weight: 400; }
 	}
-	#main div.tr-apoth-about-section .tr-apoth-about-info-box,
-	#main div.tr-apoth-about-section .tr-apoth-about-info-box .left {
+	#main div.tr-apoth-about-section .tr-apoth-about-info-box {
     text-align: center;
     p { margin: 20px 0; }
     hr { margin: auto; @include double-gradient ( 270deg, rgba(0, 0, 0, 0), 0%, #ff9900, 50%, rgba(0, 0, 0, 0), 100% ); }

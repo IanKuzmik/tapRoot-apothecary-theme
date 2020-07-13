@@ -94,20 +94,17 @@
     <div class="container-fluid tr-apoth-about-section black">
       <div class="row">
         <div class="col-12 col-lg-6 order-lg-2 tr-apoth-about-info-box">
-          <div class="">
-            <h1>Find us in Red Lodge, MT</h1>
+          <div>
+            <h1>Find us at the Farmers Market</h1>
             <hr>
-            <p>Every Friday evening from 3:30-6:00, we set up with a great group of vendors at Lion's Park in our hometown of Red Lodge.</p>
-          </div>
-          <div class="left">
-            <h1 class="left" >Find us in Cody, WY</h1>
-            <hr class="left">
-            <p class="left" >Barring a not-so-infrequent snowstorm, we drive down to Cody, WY every Saturday for the Farmers Market. In the summer, find us in the parking lot at 13th & Beck. In the winter, we’ll be in a building right across the street!</p>
-          </div>
+            <p>
+              Every Friday evening, we set up with a great group of vendors at Lion's Park in our hometown of Red Lodge. 
+              On Saturday mornings, we alternate between Cody and Billings. Follow us on <a href="https://www.instagram.com/xochis.apothecary/" target="_blank">Instagram</a> for up-to-date info
+            </p>
+          </div>  
         </div>
         <div class="col-12 col-lg-6 order-lg-1 tr-apoth-about-map-container">
-          <div class="tr-apoth-about-map" id="tr-apoth-about-map">
-          </div>
+          <div class="tr-apoth-about-map" id="tr-apoth-about-map"></div>
         </div>
       </div>
     </div>
