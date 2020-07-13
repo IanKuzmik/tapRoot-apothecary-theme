@@ -2090,14 +2090,6 @@ a:focus, button:focus {
     margin: 20px 0;
   }
 
-  .tr-apoth-home-product-img-container br {
-    display: block;
-  }
-  .tr-apoth-home-product-img-container img {
-    width: 200px;
-    height: 200px;
-  }
-
   .tr-apoth-home-products-tabs-container .nav-link {
     height: 70px;
     display: flex;
