@@ -107,16 +107,17 @@ function xochisGoogleMapInitHome() {
 }
 
 function xochisGoogleMapInitAbout() {
-  // set location
-  let locationCody = { lat: 44.524794, lng: -109.060961 };
-  let locationRedLodge = { lat: 45.190680, lng: -109.248072 }; 
-  let locationBillings = { lat: 45.740848, lng: -108.597084 };
+  // set locations
+  const locationMapCenter = { lat: 45, lng: -109 };
+  const locationCody = { lat: 44.524794, lng: -109.060961 };
+  const locationRedLodge = { lat: 45.190680, lng: -109.248072 }; 
+  const locationBillings = { lat: 45.740848, lng: -108.597084 };
   // set custom map map type
   let xochisMapType = new google.maps.StyledMapType( customMapType, { name: 'Xochis' } );
   // init map
   let map = new google.maps.Map( document.getElementById('tr-apoth-about-map'), {
     zoom                  : 7,
-    center                : { lat: 45, lng: -109 },
+    center                : locationMapCenter,
     mapTypeControlOptions : { mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'xochis_map'] },
     mapTypeId             : 'xochis_map'
   });
