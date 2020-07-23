@@ -16,7 +16,7 @@ function tr_apoth_instagram_curl_request() {
   $USER_ID       = esc_attr( get_option('tr-apoth-instagram-user-setting') );
   $ACCESS_TOKEN  = esc_attr( get_option('tr-apoth-instagram-access-setting') );
 
-  // Retrieve media_ids
+  // retrieve media_ids
   $cURL_connection = curl_init( 'https://graph.instagram.com/'.$USER_ID.'/media?access_token='.$ACCESS_TOKEN );
   curl_setopt($cURL_connection, CURLOPT_RETURNTRANSFER, true);
   $cURL_response = curl_exec($cURL_connection);
@@ -28,13 +28,13 @@ function tr_apoth_instagram_curl_request() {
   // map $media_ids, extracting the ids from the objects, so I just have an array of strings
   $media_ids = array_map( function($e) { return $e->id; }, $media_ids );
 
-  // Retrieve Images from media_ids
+  // retrieve images from media_ids
   $multi_curl = array();
   $mh = curl_multi_init();
-  $media_urls = array();
+  $image_urls = '';
   // for each media_id, build a cURL_request, set its options, and add it to the cURL_multi_handler
   foreach ( $media_ids as $i => $media_id ) {
-    $fetch_url = 'https://graph.instagram.com/'.$media_id.'?fields=media_url,media_type&access_token='.$ACCESS_TOKEN;
+    $fetch_url = 'https://graph.instagram.com/'.$media_id.'?fields=media_url,media_type,thumbnail_url&access_token='.$ACCESS_TOKEN;
     $multi_curl[$i] = curl_init( $fetch_url );
     curl_setopt( $multi_curl[$i], CURLOPT_RETURNTRANSFER, true );
     curl_multi_add_handle( $mh, $multi_curl[$i] );
@@ -44,27 +44,28 @@ function tr_apoth_instagram_curl_request() {
   do {
     curl_multi_exec($mh, $running);
   } while ($running);
-  // extraxt the media_url from the cURL response and add it to the $media_urls array
+  // extraxt the media_url/thumbnail_url from the cURL response and add it to the $image_urls string
   foreach ($multi_curl as $ch) {
-    array_push( $media_urls, json_decode( curl_multi_getcontent( $ch ) )->media_url );
+    $response = curl_multi_getcontent( $ch );
+    // check if i'm looking for a thumbnail_url (VIDEO), or a media_url (IMAGE, CAROUSEL_ALBUM)
+    if ( json_decode($response)->media_type == 'VIDEO' ) { 
+      $image_urls .= json_decode($response)->thumbnail_url.',';
+    } else {
+      $image_urls .= json_decode($response)->media_url.',';
+    }
     // close the individual cURL_handler
     curl_multi_remove_handle( $mh, $ch );
     curl_close( $ch );
   }
   // close the cURL_multi_handler
   curl_multi_close( $mh );
-  // convert media_urls array into a comm-seperated string
-  $image_url_string = '';
-  foreach ($media_urls as $url) {
-    $image_url_string .= ($url.',');
-  }
-  // return string of urls
-  echo $image_url_string;
+  // return string of image urls
+  echo $image_urls;
   // kill ajax
   wp_die();
 }
 add_action( 'wp_ajax_nopriv_tr_apoth_instagram_curl_request', 'tr_apoth_instagram_curl_request' ); //for everyone
-add_action( 'wp_ajax_tr_apoth_instagram_curl_request', 'tr_apoth_instagram_curl_request' ); //for logged-in users
+add_action( 'wp_ajax_tr_apoth_instagram_curl_request', 'tr_apoth_instagram_curl_request' );        //for logged-in users
 
 /*
     CONTACT FORM

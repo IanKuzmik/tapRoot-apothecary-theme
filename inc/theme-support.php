@@ -102,32 +102,24 @@ function tr_apoth_set_about_preview_images() {
   INSTAGRAM
   ------------------
 */
+/*
+This function grabs a string of image urls from the option {tr-apoth-instagram-img-urls},
+and maps them to HTML elements on the home page. Each image links to the instagram profile,
+which is retrieved from the option {tr-apoth-instagram-link-setting}
+*/
 function tr_apoth_display_home_instagram() {
   $img_urls = explode(',', esc_attr( get_option('tr-apoth-instagram-img-urls') ) );
   $insta_link = esc_attr( get_option('tr-apoth-instagram-link-setting') );
   $output = '';
   foreach ($img_urls as $url) {
     if ( $url == '' ) continue;
-    if ( strpos($url, 'video') ) {
-      $output .= '<div class="tr-apoth-instagram-item" data-src="'.$url.'">';
-      $output .=    '<a class="tr-apoth-instagram-item-link" href="'.$insta_link.'" target="_blank">';
-      $output .=      '<video class="tr-apoth-instagram-media" autoplay loop muted name="media">';
-      $output .=          '<source type="video/mp4">';
-      $output .=      '</video>';
-      $output .=      '<div class="tr-apoth-intagram-overlay">';
-      $output .=        '<span class="tr-icon-instagram tr-apoth-home-instagram-preview-logo"></span>';
-      $output .=      '</div>';
-      $output .=    '</a>';
-      $output .=  '</div>';
-    } else {
-      $output .= '<div class="tr-apoth-instagram-item" data-src="'.$url.'">';
-      $output .=    '<a class="tr-apoth-instagram-item-link" href="'.$insta_link.'" target="_blank">';
-      $output .=      '<div class="tr-apoth-intagram-overlay">';
-      $output .=        '<span class="tr-icon-instagram tr-apoth-home-instagram-preview-logo"></span>';
-      $output .=      '</div>';
-      $output .=    '</a>';
-      $output .= '</div>';
-    }
+    $output .= '<div class="tr-apoth-instagram-item" data-src="'.$url.'">';
+    $output .=    '<a class="tr-apoth-instagram-item-link" href="'.$insta_link.'" target="_blank">';
+    $output .=      '<div class="tr-apoth-intagram-overlay">';
+    $output .=        '<span class="tr-icon-instagram tr-apoth-home-instagram-preview-logo"></span>';
+    $output .=      '</div>';
+    $output .=    '</a>';
+    $output .= '</div>';
   }
   return $output;
 }
