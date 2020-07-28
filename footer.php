@@ -49,7 +49,7 @@
           <div class="col-12 col-sm-6 col-md-3 mt-3 mt-md-0">
             <span class="tr-apoth-footer-cat-title">Follow Us</span>
             <div class="tr-apoth-footer-social-container text-center">
-              <div class="tr-apoth-footer-social-links my-auto">
+              <div class="tr-apoth-footer-social-links">
                 <a class="tr-apoth-footer-social-link tr-icon-facebook" href="https://www.facebook.com/xochis.apothecary/" target="_blank"></a>
                 <a class="tr-apoth-footer-social-link tr-icon-twitter" href="https://twitter.com/xochis_apoth" target="_blank"></a>
                 <a class="tr-apoth-footer-social-link tr-icon-instagram" href="https://www.instagram.com/xochis.apothecary/" target="_blank"></a>

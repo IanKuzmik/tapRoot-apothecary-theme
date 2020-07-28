@@ -219,11 +219,12 @@
 */
 .tr-apoth-footer-social-container {
   height: 100%;
+  display: flex;
 }
 
 .tr-apoth-footer-social-links {
   position: relative;
-  top: 30%;
+  align-self: center;
 }
 
 .tr-apoth-footer-social-link {

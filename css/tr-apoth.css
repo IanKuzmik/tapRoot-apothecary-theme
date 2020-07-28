@@ -44,7 +44,7 @@
   Images
   ------------------------------------------
 */
-.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-featured-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
   border-radius: 12px;
   font-family: Verdana, Helvetica, sans-serif;
   font-weight: 600;
@@ -56,7 +56,7 @@
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
+.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-featured-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-featured-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -164,7 +164,7 @@
   Images
   ------------------------------------------
 */
-.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-featured-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
   border-radius: 12px;
   font-family: Verdana, Helvetica, sans-serif;
   font-weight: 600;
@@ -176,7 +176,7 @@
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
+.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-featured-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-featured-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -515,7 +515,7 @@
   Images
   ------------------------------------------
 */
-.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
+.tr-apoth-contact-form button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-individual-product button, .tr-apoth-featured-product button, .tr-apoth-footer-etsy-shop-link, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-home-product-info-box button, .tr-apoth-carousel-item button {
   border-radius: 12px;
   font-family: Verdana, Helvetica, sans-serif;
   font-weight: 600;
@@ -527,7 +527,7 @@
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
+.tr-apoth-contact-form button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-featured-product button:hover, .tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-contact-form button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-featured-product button:focus, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-carousel-item button:focus {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
@@ -721,11 +721,12 @@
 */
 .tr-apoth-footer-social-container {
   height: 100%;
+  display: flex;
 }
 
 .tr-apoth-footer-social-links {
   position: relative;
-  top: 30%;
+  align-self: center;
 }
 
 .tr-apoth-footer-social-link {
@@ -962,6 +963,90 @@ a:focus, button:focus {
   -ms-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
+}
+
+/*
+  Feature
+  ------------------------------------------
+*/
+.tr-apoth-home-feature {
+  padding: 20px;
+  box-shadow: inset 0 5px 15px -5px #000;
+}
+
+.tr-apoth-whats-new {
+  padding: 40px 0;
+}
+.tr-apoth-whats-new h1 {
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin-bottom: 20px;
+}
+.tr-apoth-whats-new ul {
+  list-style-image: url(../img/xochis-favicon-16x16.png);
+}
+.tr-apoth-whats-new h3 {
+  font-family: "Henny Penny", cursive;
+}
+.tr-apoth-whats-new p {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+.tr-apoth-featured-product-img-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tr-apoth-featured-product img {
+  border-radius: 50%;
+  width: 50%;
+}
+.tr-apoth-featured-product span {
+  font-size: 3em;
+  color: #ff9900;
+  background-color: black;
+  border-radius: 50%;
+  border: 2px #ff9900 solid;
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin: 0 auto;
+}
+.tr-apoth-featured-product span:before {
+  margin-left: 0.25em;
+}
+.tr-apoth-featured-product h1 {
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+  margin: 10px 50px;
+}
+.tr-apoth-featured-product hr {
+  margin: 0 50px;
+  background-color: #ff9900;
+}
+.tr-apoth-featured-product p {
+  font-size: 1.3em;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.tr-apoth-featured-product p.tagline {
+  text-align: center;
+  font-weight: 400;
+}
+.tr-apoth-featured-product p.price {
+  color: green;
+  font-weight: 200;
+}
+.tr-apoth-featured-product p.desc {
+  font-weight: 200;
+}
+.tr-apoth-featured-product button {
+  padding: 5px 10px;
+  color: white;
+  background-color: black;
+}
+.tr-apoth-featured-product button:hover, .tr-apoth-featured-product button:focus {
+  color: #ff9900;
 }
 
 /*
@@ -1242,46 +1327,6 @@ a:focus, button:focus {
     PRODUCTS PAGE
   =================
 */
-.tr-apoth-featured-products-carousel {
-  height: 100vh;
-}
-
-.tr-apoth-featured-products-carousel .tr-apoth-carousel-dots {
-  bottom: 5%;
-}
-
-.tr-apoth-product-section {
-  padding: 50px 0;
-}
-
-.tr-apoth-featured-product-container h1 {
-  margin: 10px 50px;
-}
-.tr-apoth-featured-product-container hr {
-  margin: 0 50px;
-  background-color: #ff9900;
-}
-.tr-apoth-featured-product-container p {
-  font-size: 1.3em;
-}
-.tr-apoth-featured-product-container p.desc {
-  font-weight: 400;
-}
-.tr-apoth-featured-product-container p.price {
-  color: green;
-  font-weight: 200;
-}
-.tr-apoth-featured-product-container p.ingredients {
-  font-weight: 200;
-}
-.tr-apoth-featured-product-container button {
-  margin: 0 50px;
-}
-.tr-apoth-featured-product-container img {
-  width: 80%;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
 .tr-apoth-product-info-box {
   color: white;
   padding: 50px 0;
@@ -1882,7 +1927,7 @@ a:focus, button:focus {
   Images
   ------------------------------------------
 */
-.tr-apoth-footer-etsy-shop-link, .tr-apoth-carousel-item button, .tr-apoth-home-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-product-info-box button, .tr-apoth-individual-product button, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-contact-form button {
+.tr-apoth-footer-etsy-shop-link, .tr-apoth-carousel-item button, .tr-apoth-featured-product button, .tr-apoth-home-product-info-box button, .tr-apoth-home-info-box button, .tr-apoth-product-info-box button, .tr-apoth-individual-product button, .tr-apoth-product-modal .modal-info-container button, .tr-apoth-contact-info-container .tr-apoth-contact.person button, .tr-apoth-contact-form button {
   border-radius: 12px;
   font-family: Verdana, Helvetica, sans-serif;
   font-weight: 600;
@@ -1894,7 +1939,7 @@ a:focus, button:focus {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-contact-form button:hover, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-carousel-item button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-contact-form button:focus {
+.tr-apoth-footer-etsy-shop-link:hover, .tr-apoth-carousel-item button:hover, .tr-apoth-featured-product button:hover, .tr-apoth-home-product-info-box button:hover, .tr-apoth-home-info-box button:hover, .tr-apoth-product-info-box button:hover, .tr-apoth-individual-product button:hover, .tr-apoth-product-modal .modal-info-container button:hover, .tr-apoth-contact-info-container .tr-apoth-contact.person button:hover, .tr-apoth-contact-form button:hover, .tr-apoth-footer-etsy-shop-link:focus, .tr-apoth-carousel-item button:focus, .tr-apoth-featured-product button:focus, .tr-apoth-home-product-info-box button:focus, .tr-apoth-home-info-box button:focus, .tr-apoth-product-info-box button:focus, .tr-apoth-individual-product button:focus, .tr-apoth-product-modal .modal-info-container button:focus, .tr-apoth-contact-info-container .tr-apoth-contact.person button:focus, .tr-apoth-contact-form button:focus {
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);

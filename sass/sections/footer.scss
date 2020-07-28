@@ -87,8 +87,8 @@
   Social
   ------------------------------------------
 */
-.tr-apoth-footer-social-container { height: 100%; }
-.tr-apoth-footer-social-links { position: relative; top: 30%; }
+.tr-apoth-footer-social-container { height: 100%; display: flex; }
+.tr-apoth-footer-social-links { position: relative; align-self: center; }
 .tr-apoth-footer-social-link {
   font-size: 1.5em;
   color: $xochis-orange;
