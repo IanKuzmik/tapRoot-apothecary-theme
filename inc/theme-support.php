@@ -128,21 +128,27 @@ function tr_apoth_display_home_instagram() {
   PRODUCTS
   ------------------
 */
-function get_product_gallery( $type ) {
-  // retrieve posts loop
+function get_product_posts( $type = null ) {
   $args = array(
     'post_type'      => 'products',
     'post_status'    => 'publish',
     'posts_per_page' => -1,
-    'tax_query'      => array(
+  );
+  if ($type) {                         // get posts of a specific type if $type is specified
+    $args['tax_query'] = array(        
       array(
         'taxonomy' => 'product_type',
         'field'    => 'slug',
         'terms'    => $type
       )
-    )
-  );
-  $loop = new WP_Query($args);
+    );
+  }
+  return new WP_Query($args); 
+}
+
+function get_product_gallery( $type ) {
+  // get posts for category $type
+  $loop = get_product_posts( $type );
   // return nothing if there are no products
   if ( !($loop->have_posts()) ) return;
   // build gallery

@@ -30,7 +30,8 @@
       <div class="row">
         <div class="col-12 col-md-6 my-auto">
           <div class="tr-apoth-whats-new">
-            <h1>What's New!</h1>
+            <?php echo get_option('tr-apoth-whats-new-setting'); ?>
+            <!-- <h1>What's New!</h1>
             <ul>
               <li>
                 <h3>Find us at the Farmers Market</h3>
@@ -44,7 +45,7 @@
                 <h3>Virtual Market</h3>
                 <p>We're trying something new. Every Wednesday, when we upload new products to our Etsy Shop, check our Instagram for a coupon code good for that day only! Kind of like a farmers market, but it's online, and we're the only vendor. It'll be fun.</p>
               </li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <div class="col-12 col-md-6">

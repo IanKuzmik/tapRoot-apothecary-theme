@@ -15,6 +15,7 @@ function tr_apoth_add_admin_page() {
   add_menu_page( 'Xochis Options', 'Xochis', 'manage_options', 'xochis', 'tr_apoth_create_admin_image_page', 'dashicons-buddicons-replies', 110 );
   // generate subpages
   add_submenu_page( 'xochis', 'Xochis Image Options', 'Images', 'manage_options', 'xochis_images', 'tr_apoth_create_admin_image_page' );
+  add_submenu_page( 'xochis', 'Xochis Announcements Options', 'Announcements', 'manage_options', 'xochis_announcements', 'tr_apoth_create_admin_announcements_page' );
   add_submenu_page( 'xochis', 'Xochis Instagram Options', 'Instagram', 'manage_options', 'xochis_instagram', 'tr_apoth_create_admin_instagram_page' );
   add_submenu_page( 'xochis', 'Xochis Google Maps', 'Google Maps', 'manage_options', 'xochis_google_maps', 'tr_apoth_create_admin_googe_maps_page' );
 
@@ -27,6 +28,7 @@ add_action( 'admin_menu', 'tr_apoth_add_admin_page' );
   ===========================
 */
 function tr_apoth_create_admin_image_page() { require_once( get_template_directory().'/inc/admin-templates/tr-apoth-admin-image.php' ); }
+function tr_apoth_create_admin_announcements_page() { require_once( get_template_directory().'/inc/admin-templates/tr-apoth-admin-announcements.php' ); }
 function tr_apoth_create_admin_instagram_page() { require_once( get_template_directory().'/inc/admin-templates/tr-apoth-admin-instagram.php' ); }
 function tr_apoth_create_admin_googe_maps_page() { require_once( get_template_directory().'/inc/admin-templates/tr-apoth-admin-google-maps.php' ); }
 
@@ -43,6 +45,14 @@ function tr_apoth_custom_settings() {
   add_settings_section( 'tr-apoth-images-about-settings-section', 'Manage About Us Images', 'tr_apoth_images_about_settings_section', 'xochis_images_about' );
   register_setting( 'tr-apoth-images-about-option-group', 'tr-apoth-images-about-setting' );
   add_settings_field( 'tr-apoth-images-about-field', 'Pictures', 'tr_apoth_images_about_field', 'xochis_images_about', 'tr-apoth-images-about-settings-section' );
+  // --- ANNOUNCEMENTS ---
+  // what's new
+  add_settings_section( 'tr-apoth-announcements-settings-section', 'Manage What\'s New', 'tr_apoth_announcements_settings_section', 'xochis_announcements' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting' );
+  add_settings_field( 'tr-apoth-whats-new-field', 'What\'s New!', 'tr_apoth_whats_new_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-featured-product-setting' );
+  add_settings_field( 'tr-apoth-featured-product-field', 'Featured Product!', 'tr_apoth_featured_product_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
+  // featured product
   // --- INSTAGRAM ---
   add_settings_section( 'tr-apoth-instagram-settings-section', 'Instagram Feed', 'tr_apoth_instagram_settings_section', 'xochis_instagram' );
   // max count
@@ -96,13 +106,36 @@ function tr_apoth_images_products_sundries_field()   { tr_apoth_set_product_prev
 // about us
 function tr_apoth_images_about_field() { tr_apoth_set_about_preview_images(); }
 
+// --- ANNOUNCEMENTS ---
+function tr_apoth_whats_new_field() { 
+  $text = get_option('tr-apoth-whats-new-setting');
+  echo '<textarea id="tr-apoth-whats-new-field" name="tr-apoth-whats-new-setting" rows="12" cols="100">'.$text.'</textarea>';
+ }
+ function tr_apoth_featured_product_field() { 
+  $featured_product = get_option('tr-apoth-featured-product-setting');
+  // get list of product pos types. generate a dropdown menu with all of them. extra: two drop down menus (category, products)
+  
+  // get all product posts 
+  $product_loop = get_product_posts();
+  // return nothing if there are no products
+  //if ( !($loop->have_posts()) ) return;
+  $output  = '';
+  $output .= '<select id="tr-apoth-featured-product-field" name="tr-apoth-featured-product-setting">';
+  while( $product_loop->have_posts() ){
+    $product_loop->the_post();
+    $output .= '<option value="'.get_field('name').'" '.( ($featured_product == get_field('name'))  ? 'selected' : '' ).' >'.get_field('name').'</option>';
+  }
+  $output .= '</select>';
+  echo $output;
+ }
+
 // --- INSTAGRAM ---
 function tr_apoth_set_instagram_max_count() {
   $selected_count = get_option('tr-apoth-instagram-max-count-setting');
   $output  = '';
   $output .= '<select id="tr-apoth-instagram-max-count-field" name="tr-apoth-instagram-max-count-setting">';
-  $output .= '<option value="4" '. ( ($selected_count == 4) ? 'selected' : '' ) .' >4</option>';
-  $output .= '<option value="8" '. ( ($selected_count == 8) ? 'selected' : '' ) .' >8</option>';
+  $output .= '<option value="4" '.  ( ($selected_count == 4)  ? 'selected' : '' ) .' >4</option>';
+  $output .= '<option value="8" '.  ( ($selected_count == 8)  ? 'selected' : '' ) .' >8</option>';
   $output .= '<option value="12" '. ( ($selected_count == 12) ? 'selected' : '' ) .' >12</option>';
   $output .= '<option value="16" '. ( ($selected_count == 16) ? 'selected' : '' ) .' >16</option>';
   $output .= '<option value="20" '. ( ($selected_count == 20) ? 'selected' : '' ) .' >20</option>';
