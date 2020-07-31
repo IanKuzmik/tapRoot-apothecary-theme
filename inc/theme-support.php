@@ -128,8 +128,13 @@ function tr_apoth_display_home_instagram() {
   PRODUCTS
   ------------------
 */
-function get_product_posts( $type = null ) {
-  $args = array(
+
+/*
+Input: (String) category of products to return. (return products of all categories if null)
+Output: a WordPress 'loop' that contains Product custom post types. 
+*/
+function get_product_posts( $type = null, $name = null ) {
+  $args = array(                      // get, by deafult, all product posts
     'post_type'      => 'products',
     'post_status'    => 'publish',
     'posts_per_page' => -1,
@@ -142,6 +147,9 @@ function get_product_posts( $type = null ) {
         'terms'    => $type
       )
     );
+  }
+  if ($name) {                         // get post of a specific name if $name is specified
+    $args['name'] = $name;
   }
   return new WP_Query($args); 
 }
@@ -192,4 +200,41 @@ function get_product_gallery( $type ) {
   $output .= '<button class="tr-apoth-hide-product-gallery" type="button" name="button" data-type="'.$type.'">Hide '.$name.'</button>';
 
   return $output;
+}
+
+/*
+  ANNOUNCEMENTS
+  ------------------
+*/
+/* 
+Generate HTML markup for featured product in Announcements section of hompage 
+Input: (String) name of product post
+Output: HTML markup
+*/
+function get_featured_product( $product ) {
+  $featured_product = get_option('tr-apoth-featured-product-setting');
+  $price = get_option('tr-apoth-featured-price-setting');
+  $loop = get_product_posts(null, $featured_product);
+  $output  = '';
+  while( $loop->have_posts() ){
+    $loop->the_post();
+
+    $icon = '';
+    //switch (){}  // deteimine which icon logo to use based on product type
+
+    $output .= '<div class="tr-apoth-featured-product">';
+    $output .=  '<div class="tr-apoth-featured-product-img-icon-container">';
+    $output .=    '<img src="'.get_field('featured_image')['url'].'" alt="">';
+    $output .=    '<span class="tr-icon-coffee"></span>';
+    $output .=  '</div>';
+    $output .=  '<h1>'.get_field('name').'</h1>';
+    $output .=  '<hr>';
+    $output .=  '<p class="tagline">'.get_field('tagline').'</p>';
+    $output .=  '<p class="price">'.$price.'</p>';
+    $output .=  '<p class="desc">'.get_field('description').'</p>';
+    $output .=  '<a href="'.get_field('etsy_link').' target="_blank"><button>Shop Etsy</button></a>';
+    $output .= '</div>';
+  }
+  echo $output;
+
 }

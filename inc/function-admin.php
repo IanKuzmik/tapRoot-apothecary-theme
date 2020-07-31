@@ -46,13 +46,17 @@ function tr_apoth_custom_settings() {
   register_setting( 'tr-apoth-images-about-option-group', 'tr-apoth-images-about-setting' );
   add_settings_field( 'tr-apoth-images-about-field', 'Pictures', 'tr_apoth_images_about_field', 'xochis_images_about', 'tr-apoth-images-about-settings-section' );
   // --- ANNOUNCEMENTS ---
-  // what's new
   add_settings_section( 'tr-apoth-announcements-settings-section', 'Manage What\'s New', 'tr_apoth_announcements_settings_section', 'xochis_announcements' );
+  // what's new
   register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting' );
   add_settings_field( 'tr-apoth-whats-new-field', 'What\'s New!', 'tr_apoth_whats_new_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
+  // featured product
   register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-featured-product-setting' );
   add_settings_field( 'tr-apoth-featured-product-field', 'Featured Product!', 'tr_apoth_featured_product_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
-  // featured product
+  // price
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-featured-price-setting' );
+  add_settings_field( 'tr-apoth-featured-price-field', 'Price', 'tr_apoth_featured_price_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
+
   // --- INSTAGRAM ---
   add_settings_section( 'tr-apoth-instagram-settings-section', 'Instagram Feed', 'tr_apoth_instagram_settings_section', 'xochis_instagram' );
   // max count
@@ -111,14 +115,10 @@ function tr_apoth_whats_new_field() {
   $text = get_option('tr-apoth-whats-new-setting');
   echo '<textarea id="tr-apoth-whats-new-field" name="tr-apoth-whats-new-setting" rows="12" cols="100">'.$text.'</textarea>';
  }
+ /* Create a dropdown menu of all products. Choose one to feature on homepage. */
  function tr_apoth_featured_product_field() { 
   $featured_product = get_option('tr-apoth-featured-product-setting');
-  // get list of product pos types. generate a dropdown menu with all of them. extra: two drop down menus (category, products)
-  
-  // get all product posts 
-  $product_loop = get_product_posts();
-  // return nothing if there are no products
-  //if ( !($loop->have_posts()) ) return;
+  $product_loop = get_product_posts();  // get all product posts 
   $output  = '';
   $output .= '<select id="tr-apoth-featured-product-field" name="tr-apoth-featured-product-setting">';
   while( $product_loop->have_posts() ){
@@ -127,6 +127,10 @@ function tr_apoth_whats_new_field() {
   }
   $output .= '</select>';
   echo $output;
+ }
+ function tr_apoth_featured_price_field() {
+  $price = esc_attr( get_option('tr-apoth-featured-price-setting') );
+  echo '<input type="text" class="tr-admin-textbox" name="tr-apoth-featured-price-setting" value="'.esc_html($price).'" placeholder="Price...">';
  }
 
 // --- INSTAGRAM ---
