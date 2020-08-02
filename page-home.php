@@ -29,42 +29,13 @@
     <div class="container-fluid tr-apoth-home-feature">
       <div class="row">
         <div class="col-12 col-md-6 my-auto">
-          <div class="tr-apoth-whats-new">
-            <h1>What's New!</h1>
-            <ul>
-              <li>
-                <h3>Find us at the Farmers Market</h3>
-                <p>We'll be in Red Lodge, MT on Friday July 31st, and Cody, WY on Saturday August 1st</p>
-              </li>
-              <li>
-                <h3>New Teas!</h3>
-                <p>Check out our Etsy Shop for three new blends: Heavy Nettle, Echinacea Allergy Relief, and Bee Balm Green</p>
-              </li>
-              <li>
-                <h3>Virtual Market</h3>
-                <p>We're trying something new. Every Wednesday, when we upload new products to our Etsy Shop, check our Instagram for a coupon code good for that day only! Kind of like a farmers market, but it's online, and we're the only vendor. It'll be fun.</p>
-              </li>
-            </ul>
-          </div>
+          <?php echo get_whats_new(); ?>
         </div>
         <div class="col-12 col-md-6">
-          <div class="tr-apoth-featured-product">
-            <div class="tr-apoth-featured-product-img-icon-container">
-              <img src="<?php echo wp_get_upload_dir()['baseurl'].'/2020/07/Heavy-Nettle-Tea-Front.jpeg'; ?>" alt="">
-              <span class="tr-icon-coffee"></span>
-            </div>
-            <h1>Heavy Nettle</h1>
-            <hr>
-            <p class="tagline">~Wild Nettle & Dandelion Fortifying Blend~</p>
-            <p class="price">$25</p>
-            <p class="desc">We're not messing around with this one. Wild Nettle, Dandelion, and Juniper, with a little Rose for flavor. Good for bones and immunity.  </p>
-            <a href=""><button>Shop Etsy</button></a>
-          </div>
+          <?php echo get_featured_product(); ?>
         </div>
       </div>
     </div>
-
-    <?php// include( 'inc/section-templates/featured-products-carousel.php' ); ?>
 
     <div class="container-fluid tr-apoth-home-quote">
       <div class="row justify-content-center">
