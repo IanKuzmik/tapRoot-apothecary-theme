@@ -280,7 +280,7 @@ function get_featured_product() {
     $output .=  '<hr>';
     $output .=  '<p class="tagline">'.get_field('tagline').'</p>';
     $output .=  '<p class="price">'.$price.'</p>';
-    $output .=  '<p class="desc">'.get_field('description').'</p>';
+    $output .=  '<p class="desc">'.( ($product_type == 'incense' || $product_type == 'jewelry') ?  get_field('ingredients') : get_field('description') ).'</p>';
     $output .=  '<a href="'.get_field('etsy_link').' target="_blank"><button>Shop Etsy</button></a>';
     $output .= '</div>';
   }
