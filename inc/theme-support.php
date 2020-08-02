@@ -130,11 +130,11 @@ function tr_apoth_display_home_instagram() {
 */
 
 /*
-Input: (String) category of products to return. (return products of all categories if null)
+Input: (String) category of products to return. (return products of all categories if null), (String) name of product to return. (return all products if null)
 Output: a WordPress 'loop' that contains Product custom post types. 
 */
 function get_product_posts( $type = null, $name = null ) {
-  $args = array(                      // get, by deafult, all product posts
+  $args = array(                       // get, by deafult, all product posts
     'post_type'      => 'products',
     'post_status'    => 'publish',
     'posts_per_page' => -1,
@@ -206,26 +206,77 @@ function get_product_gallery( $type ) {
   ANNOUNCEMENTS
   ------------------
 */
+/* Generate HTML markup for What's New section*/
+function get_whats_new() {
+  $head_1 = get_option('tr-apoth-whats-new-setting-head-1');
+  $body_1 = get_option('tr-apoth-whats-new-setting-body-1');
+  $head_2 = get_option('tr-apoth-whats-new-setting-head-2');
+  $body_2 = get_option('tr-apoth-whats-new-setting-body-2');
+  $head_3 = get_option('tr-apoth-whats-new-setting-head-3');
+  $body_3 = get_option('tr-apoth-whats-new-setting-body-3');
+  $output = '';
+  $output .= '<div class="tr-apoth-whats-new">';
+  $output .=  '<h1>What\'s New!</h1>';
+  $output .=  '<ul>';
+  $output .=    '<li>';
+  $output .=      '<h3>'.$head_1.'</h3>';
+  $output .=      '<p>'.$body_1.'</p>';
+  $output .=    '</li>';
+  $output .=    '<li>';
+  $output .=      '<h3>'.$head_2.'</h3>';
+  $output .=      '<p>'.$body_2.'</p>';
+  $output .=    '</li>';
+  $output .=    '<li>';
+  $output .=      '<h3>'.$head_3.'</h3>';
+  $output .=      '<p>'.$body_3.'</p>';
+  $output .=    '</li>';
+  $output .=  '</ul>';
+  $output .= '</div>';
+  return $output; 
+}
+
+
 /* 
-Generate HTML markup for featured product in Announcements section of hompage 
-Input: (String) name of product post
-Output: HTML markup
+Generate HTML markup for Featured Product section 
 */
-function get_featured_product( $product ) {
+function get_featured_product() {
   $featured_product = get_option('tr-apoth-featured-product-setting');
   $price = get_option('tr-apoth-featured-price-setting');
   $loop = get_product_posts(null, $featured_product);
   $output  = '';
   while( $loop->have_posts() ){
     $loop->the_post();
-
+    $id = get_the_id();                                                 // get post ID
+    $product_type = wp_get_post_terms( $id, 'product_type' )[0]->slug;  // get product type. Get list of terms for this post the match 'product type'. This should return a single element array of objects. the 'slug' or 'name' can be used to retrieve the product type.
     $icon = '';
-    //switch (){}  // deteimine which icon logo to use based on product type
+    switch ( $product_type ) {                                          // determine which icon to use based on $product_type
+      case 'tea':
+        $icon = 'tr-icon-coffee';
+        break;
+      case 'incense':
+        $icon = 'tr-icon-fire-2';
+        break;
+      case 'body':
+        $icon = 'tr-icon-leaf';
+        break;
+      case 'syrup':
+        $icon = 'tr-icon-tint';
+        break;
+      case 'jewelry':
+        $icon = 'tr-icon-diamond-1';
+        break;
+      case 'sundries':
+        $icon = 'tr-icon-moon';
+        break;
+      default:
+        $icon = 'tr-icon-moon';
+        break;
+    }          
 
     $output .= '<div class="tr-apoth-featured-product">';
     $output .=  '<div class="tr-apoth-featured-product-img-icon-container">';
     $output .=    '<img src="'.get_field('featured_image')['url'].'" alt="">';
-    $output .=    '<span class="tr-icon-coffee"></span>';
+    $output .=    '<span class="'.$icon.'"></span>';
     $output .=  '</div>';
     $output .=  '<h1>'.get_field('name').'</h1>';
     $output .=  '<hr>';
@@ -235,6 +286,7 @@ function get_featured_product( $product ) {
     $output .=  '<a href="'.get_field('etsy_link').' target="_blank"><button>Shop Etsy</button></a>';
     $output .= '</div>';
   }
-  echo $output;
+  wp_reset_postdata();
+  return $output;
 
 }

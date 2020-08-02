@@ -48,7 +48,12 @@ function tr_apoth_custom_settings() {
   // --- ANNOUNCEMENTS ---
   add_settings_section( 'tr-apoth-announcements-settings-section', 'Manage What\'s New', 'tr_apoth_announcements_settings_section', 'xochis_announcements' );
   // what's new
-  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting-head-1' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting-body-1' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting-head-2' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting-body-2' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting-head-3' );
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting-body-3' );
   add_settings_field( 'tr-apoth-whats-new-field', 'What\'s New!', 'tr_apoth_whats_new_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
   // featured product
   register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-featured-product-setting' );
@@ -112,26 +117,47 @@ function tr_apoth_images_about_field() { tr_apoth_set_about_preview_images(); }
 
 // --- ANNOUNCEMENTS ---
 function tr_apoth_whats_new_field() { 
-  $text = get_option('tr-apoth-whats-new-setting');
-  echo '<textarea id="tr-apoth-whats-new-field" name="tr-apoth-whats-new-setting" rows="12" cols="100">'.$text.'</textarea>';
- }
- /* Create a dropdown menu of all products. Choose one to feature on homepage. */
- function tr_apoth_featured_product_field() { 
-  $featured_product = get_option('tr-apoth-featured-product-setting');
-  $product_loop = get_product_posts();  // get all product posts 
+  $head_1 = get_option('tr-apoth-whats-new-setting-head-1');
+  $body_1 = get_option('tr-apoth-whats-new-setting-body-1');
+  $head_2 = get_option('tr-apoth-whats-new-setting-head-2');
+  $body_2 = get_option('tr-apoth-whats-new-setting-body-2');
+  $head_3 = get_option('tr-apoth-whats-new-setting-head-3');
+  $body_3 = get_option('tr-apoth-whats-new-setting-body-3');
   $output  = '';
-  $output .= '<select id="tr-apoth-featured-product-field" name="tr-apoth-featured-product-setting">';
-  while( $product_loop->have_posts() ){
-    $product_loop->the_post();
-    $output .= '<option value="'.get_field('name').'" '.( ($featured_product == get_field('name'))  ? 'selected' : '' ).' >'.get_field('name').'</option>';
-  }
-  $output .= '</select>';
+  $output .= '<div class="tr-apoth-whats-new-fields">';
+  $output .=  '<label for="head-1">Heading 1</label>';
+  $output .=  '<input id="head-1" name="tr-apoth-whats-new-setting-head-1" value="'.esc_html($head_1).'" size="55">';
+  $output .=  '<label for="body-1">Body 1</label>';
+  $output .=  '<textarea id="boy-1" name="tr-apoth-whats-new-setting-body-1" rows="6" cols="50">'.esc_html($body_1).'</textarea>';
+  $output .=  '<label for="head-2">Heading 2</label>';
+  $output .=  '<input id="head-2" name="tr-apoth-whats-new-setting-head-2" value="'.esc_html($head_2).'" size="55">';
+  $output .=  '<label for="body-2">Body 2</label>';
+  $output .=  '<textarea id="boy-2" name="tr-apoth-whats-new-setting-body-2" rows="6" cols="50">'.esc_html($body_2).'</textarea>';
+  $output .=  '<label for="head-3">Heading 3</label>';
+  $output .=  '<input id="head-3" name="tr-apoth-whats-new-setting-head-3" value="'.esc_html($head_3).'" size="55">';
+  $output .=  '<label for="body-3">Body 3</label>';
+  $output .=  '<textarea id="boy-3" name="tr-apoth-whats-new-setting-body-3" rows="6" cols="50">'.esc_html($body_3).'</textarea>';
+  $output .= '</div>';
   echo $output;
  }
- function tr_apoth_featured_price_field() {
-  $price = esc_attr( get_option('tr-apoth-featured-price-setting') );
-  echo '<input type="text" class="tr-admin-textbox" name="tr-apoth-featured-price-setting" value="'.esc_html($price).'" placeholder="Price...">';
- }
+ 
+/* Create a dropdown menu of all products. Choose one to feature on homepage. */
+function tr_apoth_featured_product_field() { 
+$featured_product = get_option('tr-apoth-featured-product-setting');
+$product_loop = get_product_posts();  // get all product posts 
+$output  = '';
+$output .= '<select id="tr-apoth-featured-product-field" name="tr-apoth-featured-product-setting">';
+while( $product_loop->have_posts() ){
+  $product_loop->the_post();
+  $output .= '<option value="'.get_field('name').'" '.( ($featured_product == get_field('name'))  ? 'selected' : '' ).' >'.get_field('name').'</option>';
+}
+$output .= '</select>';
+echo $output;
+}
+function tr_apoth_featured_price_field() {
+$price = esc_attr( get_option('tr-apoth-featured-price-setting') );
+echo '<input type="text" class="tr-admin-textbox" name="tr-apoth-featured-price-setting" value="'.esc_html($price).'" placeholder="Price...">';
+}
 
 // --- INSTAGRAM ---
 function tr_apoth_set_instagram_max_count() {

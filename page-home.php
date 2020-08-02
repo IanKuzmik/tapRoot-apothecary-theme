@@ -29,12 +29,10 @@
     <div class="container-fluid tr-apoth-home-feature">
       <div class="row">
         <div class="col-12 col-md-6 my-auto">
-          <div class="tr-apoth-whats-new">
-            <?php echo get_option('tr-apoth-whats-new-setting'); ?>
-          </div>
+          <?php echo get_whats_new(); ?>
         </div>
         <div class="col-12 col-md-6">
-          <?php get_featured_product( get_option('tr-apoth-featured-product-setting') ); ?>
+          <?php echo get_featured_product(); ?>
         </div>
       </div>
     </div>

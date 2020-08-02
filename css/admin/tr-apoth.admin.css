@@ -162,6 +162,19 @@
 }
 
 /*
+  Announcements
+  ------------------------------------------
+*/
+.tr-apoth-whats-new-fields label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.tr-apoth-whats-new-fields input, .tr-apoth-whats-new-fields textarea {
+  display: block;
+  margin-bottom: 15px;
+}
+
+/*
   Instagram
   ------------------------------------------
 */
