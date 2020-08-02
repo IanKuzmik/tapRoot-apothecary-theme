@@ -235,7 +235,6 @@ function get_whats_new() {
   return $output; 
 }
 
-
 /* 
 Generate HTML markup for Featured Product section 
 */
@@ -272,7 +271,6 @@ function get_featured_product() {
         $icon = 'tr-icon-moon';
         break;
     }          
-
     $output .= '<div class="tr-apoth-featured-product">';
     $output .=  '<div class="tr-apoth-featured-product-img-icon-container">';
     $output .=    '<img src="'.get_field('featured_image')['url'].'" alt="">';

@@ -71,10 +71,31 @@ jQuery(document).ready(function($) {
     mediaUploader.open();
   });
 
+  // Featured Product
+  $('#tr-apoth-featured-product-category-field').on( 'change', () => {
+    const ajaxUrl = $('#tr-apoth-featured-product-category-field').data('url');
+    const type    = $('#tr-apoth-featured-product-category-field option:selected').html();
+    $.ajax({
+      url: ajaxUrl,
+      type: 'POST',
+      dataType: 'text',
+      data: {
+        action: 'tr_apoth_update_featured_product_dropdown',
+        type: type
+      },
+      error: function( response ) {
+        console.log( 'AJAX ERROR: ' + response );
+      },
+      success: function( response ) {
+        $('#tr-apoth-featured-product-field').html(response);
+      }
+    });
+  });
+
   // Instagram Refresh
   $('#tr-apoth-js-instagramRefresh').on('click', function() {
     // retrieve data-url attribute from refresh button (@ inc/templates/tr-apoth-admin-instagram.php)
-    var ajaxUrl = $(this).data('url');
+    const ajaxUrl = $(this).data('url');
     // reveal spinner
     $('.tr-apoth-instagram-refresh-spinner').css('opacity', '1');
     // execute cURL requests for instagram images. response = string of media urls
@@ -88,7 +109,7 @@ jQuery(document).ready(function($) {
         console.log( 'AJAX ERROR: ' + response );
         $('.tr-apoth-instagram-refresh-spinner-container').css('opacity', '0');
       },
-      success: function ( response ) {
+      success: function( response ) {
         // update hidden div
         $('#tr-apoth-instagram-img-urls-field').text(response);
         // hide spinner

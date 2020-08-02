@@ -92,3 +92,35 @@ function tr_apoth_contact_form_submit() {
 }
 add_action( 'wp_ajax_nopriv_tr_apoth_contact_form_submit', 'tr_apoth_contact_form_submit' );
 add_action( 'wp_ajax_tr_apoth_contact_form_submit', 'tr_apoth_contact_form_submit' );
+
+/*
+    FEATURED PRODUCT DROPDOWN
+  =============================
+*/
+/* When featured category is selected, generate a new list of products that fit the new category, and return HTML as a string */
+function tr_apoth_update_featured_product_dropdown() {
+  $featured_product = get_option('tr-apoth-featured-product-setting'); // case: user selects a category that contains the featured product. this product should be 'selected', so we get it here to check later
+  $type = $_POST['type'];                                              // get the product category that was selected
+  $output  = '';
+  $args = array(                                                       // generate arguments for WP_Query. We want all published products of a specific product_type
+    'post_type'      => 'products',
+    'post_status'    => 'publish',
+    'posts_per_page' => -1,
+    'tax_query'       => array(                                        // limit products to a taxonomy
+      array(                                                           // the '$type' term is the product category sleected, which will match the 'slug' field of the 'product_type' taxonomy
+        'taxonomy' => 'product_type',
+        'field'    => 'slug',                                         
+        'terms'    => $type
+      )
+    )
+  );
+  $loop = new WP_Query($args); 
+  while( $loop->have_posts() ){
+    $loop->the_post();
+    $output .= '<option value="'.get_field('name').'" '.( ($featured_product == get_field('name'))  ? 'selected' : '' ).' >'.get_field('name').'</option>';
+  }
+  echo $output; 
+  wp_die();
+}
+add_action( 'wp_ajax_nopriv_tr_apoth_update_featured_product_dropdown', 'tr_apoth_update_featured_product_dropdown' );
+add_action( 'wp_ajax_tr_apoth_update_featured_product_dropdown', 'tr_apoth_update_featured_product_dropdown' );

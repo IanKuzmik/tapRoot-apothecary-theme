@@ -56,6 +56,7 @@ function tr_apoth_custom_settings() {
   register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-whats-new-setting-body-3' );
   add_settings_field( 'tr-apoth-whats-new-field', 'What\'s New!', 'tr_apoth_whats_new_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
   // featured product
+  register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-featured-product-category-setting' );
   register_setting( 'tr-apoth-announcements-option-group', 'tr-apoth-featured-product-setting' );
   add_settings_field( 'tr-apoth-featured-product-field', 'Featured Product!', 'tr_apoth_featured_product_field', 'xochis_announcements', 'tr-apoth-announcements-settings-section' );
   // price
@@ -141,19 +142,27 @@ function tr_apoth_whats_new_field() {
   echo $output;
  }
  
-/* Create a dropdown menu of all products. Choose one to feature on homepage. */
+/* Choose product to feature on homepage. Two dropdowns: Category | Products.  */
 function tr_apoth_featured_product_field() { 
-$featured_product = get_option('tr-apoth-featured-product-setting');
-$product_loop = get_product_posts();  // get all product posts 
-$output  = '';
-$output .= '<select id="tr-apoth-featured-product-field" name="tr-apoth-featured-product-setting">';
-while( $product_loop->have_posts() ){
-  $product_loop->the_post();
-  $output .= '<option value="'.get_field('name').'" '.( ($featured_product == get_field('name'))  ? 'selected' : '' ).' >'.get_field('name').'</option>';
-}
-$output .= '</select>';
-echo $output;
-}
+  $featured_product_category = get_option('tr-apoth-featured-product-category-setting');
+  $featured_product = get_option('tr-apoth-featured-product-setting');
+  $tax_array = array_map( function($tax) { return $tax->name; }, get_terms('product_type') ); // get array of published product types
+  $product_loop = get_product_posts( $featured_product_category );                            // get all product posts of selected category 
+  $output  = '';
+  $output .= '<select id="tr-apoth-featured-product-category-field" name="tr-apoth-featured-product-category-setting" data-url="'.admin_url( 'admin-ajax.php' ).'">';
+  foreach ( $tax_array as $tax ) {
+    $output .= '<option value="'.$tax.'" '.( ($featured_product_category == $tax)  ? 'selected' : '' ).' >'.$tax.'</option>';
+  }
+  $output .= '</select>';
+  $output .= '<select id="tr-apoth-featured-product-field" name="tr-apoth-featured-product-setting">'; // dropdown for individual products. This is updated either by the Submit button or by AJAX. 
+  while( $product_loop->have_posts() ){
+    $product_loop->the_post();
+    $output .= '<option value="'.get_field('name').'" '.( ($featured_product == get_field('name'))  ? 'selected' : '' ).' >'.get_field('name').'</option>';
+  }
+  $output .= '</select>';
+  echo $output;
+  }
+/* choose price for featured product (include $) */
 function tr_apoth_featured_price_field() {
 $price = esc_attr( get_option('tr-apoth-featured-price-setting') );
 echo '<input type="text" class="tr-admin-textbox" name="tr-apoth-featured-price-setting" value="'.esc_html($price).'" placeholder="Price...">';
