@@ -12,7 +12,7 @@
 */
 function tr_apoth_add_admin_page() {
   // generate menu
-  add_menu_page( 'Xochis Options', 'Xochis', 'manage_options', 'xochis', 'tr_apoth_create_admin_image_page', 'dashicons-buddicons-replies', 110 );
+  add_menu_page( 'Xochis Options', 'Xochis', 'manage_options', 'xochis', 'tr_apoth_create_admin_image_page', get_template_directory_uri().'/img/xochis-favicon-16x16.png', 110 );
   // generate subpages
   add_submenu_page( 'xochis', 'Xochis Image Options', 'Images', 'manage_options', 'xochis_images', 'tr_apoth_create_admin_image_page' );
   add_submenu_page( 'xochis', 'Xochis Announcements Options', 'Announcements', 'manage_options', 'xochis_announcements', 'tr_apoth_create_admin_announcements_page' );
